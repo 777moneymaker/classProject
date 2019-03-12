@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././Headers/MainFunctions.h
+
+/Users/777moneymaker/Desktop/Projekt PPO/Sources/MainFunctions.cpp
+iostream
+-
+Headers/MainFunctions.h
+/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/MainFunctions.h
+
