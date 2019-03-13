@@ -26,7 +26,10 @@ private:
 
 protected:
     std::string engineType;
-
+public:
+    WheelMachine *next;
+    void insertNewVehicle();
+    void deleteMachine(WheelMachine *del);
 };
 
 class FlyingMachine : public Machine {
@@ -68,6 +71,7 @@ protected:
 public:
     Jet *next;
     void insertNewJet();
+    void deleteJet(Jet *del);
 };
 
 class Helicopter : public FlyingMachine {
@@ -80,6 +84,7 @@ protected:
 public:
     Helicopter *next;
     void insertNewHeli();
+    void deleteHeli(Helicopter *del);
 };
 
 class Submarine : public FloatingMachine {
@@ -92,6 +97,7 @@ protected:
 public:
     Submarine *next;
     void insertNewSubmarine();
+    void deleteSubmarine(Submarine *del);
 };
 
 class Ship : public FloatingMachine {
@@ -104,6 +110,7 @@ protected:
 public:
     Ship *next;
     void insertNewShip();
+    void deleteShip(Ship *del);
 };
 
 class Rocket : public SpaceMachine {
@@ -116,6 +123,7 @@ protected:
 public:
     Rocket *next;
     void insertNewRocket();
+    void deleteRocket(Rocket *del);
 };
 // *************************************
 #endif //PROJEKT_PPO_CLASS_H

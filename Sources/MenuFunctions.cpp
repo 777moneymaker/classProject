@@ -12,7 +12,7 @@ void Utilities::CommandList(){
     std::cout<<"           * HELP - prints all the commands that you can use\n"
           "                * CD - change directory (CD *class*)\n"
           "                * MO - make object for given class\n"
-          "                * DO - delete object (DO *object*\n"
+          "                * DO - delete object (DO *object*) \n"
           "                * MDO - modificate object (MDO *object*)\n"
           "                * DIR - prints every object in given class (name)\n"
           "                * SHOW - prints info about object (SHOW *object*)\n"
@@ -133,25 +133,33 @@ int FirstLevel::commandToInt(std::string command, std::string atribute){
     if(level == "FlyingMachine" && command=="CD" && (atribute == "Machine" || atribute == "." || atribute =="Jet" || atribute =="Helicopter")) {
         return 0;
     }else if(level == "FloatingMachine" && command=="CD" && (atribute == "Machine" || atribute == "." || atribute =="Submarine" || atribute =="Ship")){
-        return 1;
-    }
-    else if(level == "WheelMachine" && command=="CD" && (atribute == "." || atribute == "Machine")){
-        return 2;
+        return 0;
+    }else if(level == "WheelMachine" && command=="CD" && (atribute == "." || atribute == "Machine")){
+        return 0;
     }else if(level == "SpaceMachine" && command=="CD" && (atribute == "Machine" || atribute == "." || atribute =="Rocket" )){
+        return 0;
+    }else if(command == "MO" ){
+        return 1;
+    }else if(command == "DO" ){
+        return 2;
+    }else if(command == "MDO" ){
         return 3;
-    }else if(command == "SAVE" ){
+    }else if(command == "DIR" ){
         return 4;
-    }else if(command == "READ" ){
+    }else if(command == "SHOW" ){
         return 5;
-    }else if(command == "TREE" ){
+    }else if(command == "SAVE"){
         return 6;
-    }else if(command == "EXIT" ){
+    }else if(command == "READ"){
         return 7;
-    }else if(command == "HELP" ){
+    }else if(command =="TREE"){
         return 8;
-    }
-    else
+    }else if(command == "HELP"){
+        return 9;
+    }else if(command == "EXIT"){
         return 10;
+    }else
+        return 11;
 }
 
 bool SecondLevel::isCommandGood(std::string command, std::string atribute) {
@@ -221,22 +229,23 @@ int SecondLevel::commandToInt(std::string command, std::string atribute) {
     }else if(command == "MO") {
         return 1;
     }else if(command == "DO") {
-
+        return 2;
     }else if(command == "MDO") {
-
+        return 3;
     }else if(command == "DIR") {
-
+        return 4;
     }else if(command == "SHOW") {
-
+        return 5;
+    }else if(command == "SAVE" ) {
+        return 6;
     }else if(command == "READ" ) {
-
+        return 7;
     }else if(command == "TREE" ) {
-
-    }else if(command == "EXIT" ) {
-
+        return 8;
     }else if(command == "HELP" ) {
-
-    }else
+        return 9;
+    }else if(command == "EXIT")
         return 10;
-
+    else
+        return 11;
 }

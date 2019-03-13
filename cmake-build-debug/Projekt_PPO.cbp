@@ -91,10 +91,16 @@
 		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/MenuFunctions.h">
 			<Option target="Projekt_PPO"/>
 		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/ObjectFunctions.h">
+			<Option target="Projekt_PPO"/>
+		</Unit>
 		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/ClassMethods.cpp">
 			<Option target="Projekt_PPO"/>
 		</Unit>
 		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/MenuFunctions.cpp">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/ObjectFunctions.cpp">
 			<Option target="Projekt_PPO"/>
 		</Unit>
 		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/main.cpp">

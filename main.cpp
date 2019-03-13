@@ -3,6 +3,7 @@
 #include "Headers/Class.h"
 #include "Headers/MenuFunctions.h"
 #include "Headers/GlobalVariables.h"
+#include "Headers/ObjectFunctions.h"
 
 std::string level = "Machine";
 Jet *JetHead = NULL;
@@ -10,6 +11,7 @@ Helicopter *HeliHead = NULL;
 Submarine *SubHead = NULL;
 Ship *ShipHead = NULL;
 Rocket *RocketHead = NULL;
+WheelMachine *MachineHead = NULL;
 
 int main() {
 
@@ -47,6 +49,7 @@ int main() {
 
         while (Base::isCommandGood(command, atribute) || FirstLevel::isCommandGood(command, atribute) || SecondLevel::isCommandGood(command, atribute)) {
 
+            //********************* base level
             if (level == "Machine") {
                 switch (Base::commandToInt(command, atribute)) {
                     case 0: {
@@ -86,11 +89,11 @@ int main() {
                         std::cout << "Can't find that!" << std::endl;
                         break;
                     }
-
                 }
                 break;
             }
 
+            // ********************** 1st level
             if (level == "FlyingMachine" || level == "FloatingMachine" || level == "WheelMachine" ||
                 level == "SpaceMachine") {
 
@@ -103,27 +106,12 @@ int main() {
                         break;
                     }
                     case 1: {
-                        if(atribute==".")
-                            level = "Machine";
-                        else
-                            level = atribute;
-                        break;
+                        List::insertNode();
+                            break;
                     }
                     case 2:{
-                        if(atribute=="." || atribute =="Machine"){
-                            level = "Machine";
-                            break;
-                        }
-                       std::cout<<"This level does not have sub-level"<<std::endl;
-                       break;
                     }
                     case 3:{
-                        if(atribute=="." || atribute =="Machine") {
-                            level = "Machine";
-                            break;
-                        }
-                        level = atribute;
-                        break;
                     }
                     case 4:{
                         if(atribute=="SAVE"){
@@ -156,14 +144,13 @@ int main() {
                         std::cout<<"Couldn't Find!"<<std::endl;
                         break;
                     }
-
                 }
                 break;
             }
 
+            // *********************** 2nd level
             if (level == "Jet" || level == " Helicopter " || level == "Submarine" || level == " Ship " ||
                 level == "Rocket") {
-
                 switch( SecondLevel::commandToInt(command, atribute) ){
                     case 0:{
                         if(atribute == "." ){
@@ -172,12 +159,13 @@ int main() {
                         }
                         level = atribute;
                         break;
-
                     }
                     case 1 :{
-                        if(level == "Jet")
-                            JetHead->insertNewJet();
+                        List::insertNode();
                         break;
+                    }
+                    case 2:{
+
                     }
                 }
                 break;

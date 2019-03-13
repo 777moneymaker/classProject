@@ -177,6 +177,33 @@ Sources/MenuFunctions.cpp.s:
 	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.s
 .PHONY : Sources/MenuFunctions.cpp.s
 
+Sources/ObjectFunctions.o: Sources/ObjectFunctions.cpp.o
+
+.PHONY : Sources/ObjectFunctions.o
+
+# target to build an object file
+Sources/ObjectFunctions.cpp.o:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.o
+.PHONY : Sources/ObjectFunctions.cpp.o
+
+Sources/ObjectFunctions.i: Sources/ObjectFunctions.cpp.i
+
+.PHONY : Sources/ObjectFunctions.i
+
+# target to preprocess a source file
+Sources/ObjectFunctions.cpp.i:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.i
+.PHONY : Sources/ObjectFunctions.cpp.i
+
+Sources/ObjectFunctions.s: Sources/ObjectFunctions.cpp.s
+
+.PHONY : Sources/ObjectFunctions.s
+
+# target to generate assembly for a file
+Sources/ObjectFunctions.cpp.s:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.s
+.PHONY : Sources/ObjectFunctions.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -219,6 +246,9 @@ help:
 	@echo "... Sources/MenuFunctions.o"
 	@echo "... Sources/MenuFunctions.i"
 	@echo "... Sources/MenuFunctions.s"
+	@echo "... Sources/ObjectFunctions.o"
+	@echo "... Sources/ObjectFunctions.i"
+	@echo "... Sources/ObjectFunctions.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

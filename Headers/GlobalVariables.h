@@ -15,6 +15,7 @@ extern Helicopter *HeliHead;
 extern Submarine *SubHead;
 extern Ship *ShipHead;
 extern Rocket *RocketHead;
+extern WheelMachine *MachineHead;
 
 
 #endif //PROJEKT_PPO_GLOBALVARIABLES_H
