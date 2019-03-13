@@ -67,7 +67,7 @@ protected:
 
 public:
     Jet *next;
-    void InsertNewJet();
+    void insertNewJet();
 };
 
 class Helicopter : public FlyingMachine {

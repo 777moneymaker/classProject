@@ -176,7 +176,7 @@ int main() {
                     }
                     case 1 :{
                         if(level == "Jet")
-                            JetHead->InsertNewJet();
+                            JetHead->insertNewJet();
                         break;
                     }
                 }
