@@ -6,11 +6,21 @@
 
 #IncludeRegexTransform: 
 
-.././Headers/MainFunctions.h
-
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/MainFunctions.cpp
+/Users/777moneymaker/Desktop/Projekt PPO/Headers/Class.h
 iostream
 -
+MainFunctions.h
+/Users/777moneymaker/Desktop/Projekt PPO/Headers/MainFunctions.h
+
+/Users/777moneymaker/Desktop/Projekt PPO/Headers/MainFunctions.h
+
+/Users/777moneymaker/Desktop/Projekt PPO/main.cpp
+iostream
+-
+string
+-
+Headers/Class.h
+/Users/777moneymaker/Desktop/Projekt PPO/Headers/Class.h
 Headers/MainFunctions.h
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/MainFunctions.h
+/Users/777moneymaker/Desktop/Projekt PPO/Headers/MainFunctions.h
 
