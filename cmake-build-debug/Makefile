@@ -123,32 +123,86 @@ Projekt_PPO/fast:
 	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/build
 .PHONY : Projekt_PPO/fast
 
-Sources/MainFunctions.o: Sources/MainFunctions.cpp.o
+Sources/ClassMethods.o: Sources/ClassMethods.cpp.o
 
-.PHONY : Sources/MainFunctions.o
+.PHONY : Sources/ClassMethods.o
 
 # target to build an object file
-Sources/MainFunctions.cpp.o:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/MainFunctions.cpp.o
-.PHONY : Sources/MainFunctions.cpp.o
+Sources/ClassMethods.cpp.o:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.o
+.PHONY : Sources/ClassMethods.cpp.o
 
-Sources/MainFunctions.i: Sources/MainFunctions.cpp.i
+Sources/ClassMethods.i: Sources/ClassMethods.cpp.i
 
-.PHONY : Sources/MainFunctions.i
+.PHONY : Sources/ClassMethods.i
 
 # target to preprocess a source file
-Sources/MainFunctions.cpp.i:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/MainFunctions.cpp.i
-.PHONY : Sources/MainFunctions.cpp.i
+Sources/ClassMethods.cpp.i:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.i
+.PHONY : Sources/ClassMethods.cpp.i
 
-Sources/MainFunctions.s: Sources/MainFunctions.cpp.s
+Sources/ClassMethods.s: Sources/ClassMethods.cpp.s
 
-.PHONY : Sources/MainFunctions.s
+.PHONY : Sources/ClassMethods.s
 
 # target to generate assembly for a file
-Sources/MainFunctions.cpp.s:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/MainFunctions.cpp.s
-.PHONY : Sources/MainFunctions.cpp.s
+Sources/ClassMethods.cpp.s:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.s
+.PHONY : Sources/ClassMethods.cpp.s
+
+Sources/MenuFunctions.o: Sources/MenuFunctions.cpp.o
+
+.PHONY : Sources/MenuFunctions.o
+
+# target to build an object file
+Sources/MenuFunctions.cpp.o:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.o
+.PHONY : Sources/MenuFunctions.cpp.o
+
+Sources/MenuFunctions.i: Sources/MenuFunctions.cpp.i
+
+.PHONY : Sources/MenuFunctions.i
+
+# target to preprocess a source file
+Sources/MenuFunctions.cpp.i:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.i
+.PHONY : Sources/MenuFunctions.cpp.i
+
+Sources/MenuFunctions.s: Sources/MenuFunctions.cpp.s
+
+.PHONY : Sources/MenuFunctions.s
+
+# target to generate assembly for a file
+Sources/MenuFunctions.cpp.s:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.s
+.PHONY : Sources/MenuFunctions.cpp.s
+
+Sources/ObjectsFunctions.o: Sources/ObjectsFunctions.cpp.o
+
+.PHONY : Sources/ObjectsFunctions.o
+
+# target to build an object file
+Sources/ObjectsFunctions.cpp.o:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ObjectsFunctions.cpp.o
+.PHONY : Sources/ObjectsFunctions.cpp.o
+
+Sources/ObjectsFunctions.i: Sources/ObjectsFunctions.cpp.i
+
+.PHONY : Sources/ObjectsFunctions.i
+
+# target to preprocess a source file
+Sources/ObjectsFunctions.cpp.i:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ObjectsFunctions.cpp.i
+.PHONY : Sources/ObjectsFunctions.cpp.i
+
+Sources/ObjectsFunctions.s: Sources/ObjectsFunctions.cpp.s
+
+.PHONY : Sources/ObjectsFunctions.s
+
+# target to generate assembly for a file
+Sources/ObjectsFunctions.cpp.s:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ObjectsFunctions.cpp.s
+.PHONY : Sources/ObjectsFunctions.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Projekt_PPO"
-	@echo "... Sources/MainFunctions.o"
-	@echo "... Sources/MainFunctions.i"
-	@echo "... Sources/MainFunctions.s"
+	@echo "... Sources/ClassMethods.o"
+	@echo "... Sources/ClassMethods.i"
+	@echo "... Sources/ClassMethods.s"
+	@echo "... Sources/MenuFunctions.o"
+	@echo "... Sources/MenuFunctions.i"
+	@echo "... Sources/MenuFunctions.s"
+	@echo "... Sources/ObjectsFunctions.o"
+	@echo "... Sources/ObjectsFunctions.i"
+	@echo "... Sources/ObjectsFunctions.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

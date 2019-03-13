@@ -1,13 +1,20 @@
 #include <iostream>
 #include <string>
 #include "Headers/Class.h"
-#include "Headers/MainFunctions.h"
+#include "Headers/MenuFunctions.h"
+#include "Headers/GlobalVariables.h"
+#include "Headers/ObjectsFunctions.h"
 
-
+std::string level = "Machine";
+Jet *JetNext = NULL;
+Helicopter *HeliNext = NULL;
+Submarine *SubNext = NULL;
+Ship *ShipNext = NULL;
+Rocket *RocketNext = NULL;
 
 int main() {
     std::string input;
-    MenuGenerator();
+    Utilities::MenuGenerator();
 
     std::cout << "Type *START* to start the program" << std::endl;
     std::cout << "~ ";
@@ -38,10 +45,10 @@ int main() {
         atribute = input.substr(pos + 1);
         command = input.substr(0, pos);
 
-        while (isCommandGoodAtBase(command, atribute) || isCommandGoodAtFirst(command, atribute)) {
+        while (Base::isCommandGood(command, atribute) || FirstLevel::isCommandGood(command, atribute)) {
 
             if (level == "Machine") {
-                switch (commandToIntAtBase(command, atribute)) {
+                switch (Base::commandToInt(command, atribute)) {
                     case 0: {
                         if (atribute == ".")
                             level = "Machine";
@@ -50,17 +57,25 @@ int main() {
                         break;
                     }
                     case 1: {
-                        CommandList();
+                        Utilities::CommandList();
                         break;
                     }
                     case 2: {
+                        if(atribute == "SAVE"){
+                            std::cout<<"No file to save!"<<std::endl;
+                            break;
+                        }
                         break;
                     }
                     case 3: {
+                        if(atribute=="READ"){
+                            std::cout<<"No file to read from!"<<std::endl;
+                            break;
+                        }
                         break;
                     }
                     case 4: {
-                        Tree();
+                        Utilities::Tree();
                         break;
                     }
                     case 5: {
@@ -79,7 +94,7 @@ int main() {
             if (level == "FlyingMachine" || level == "FloatingMachine" || level == "WheelMachine" ||
                 level == "SpaceMachine") {
 
-                switch (commandToIntAtFirst(command, atribute)) {
+                switch (FirstLevel::commandToInt(command, atribute)) {
                     case 0: {
                         if(atribute==".")
                             level = "Machine";
@@ -95,32 +110,77 @@ int main() {
                         break;
                     }
                     case 2:{
+                        if(atribute=="." || atribute =="Machine"){
+                            level = "Machine";
+                            break;
+                        }
                        std::cout<<"This level does not have sub-level"<<std::endl;
                        break;
                     }
                     case 3:{
-
+                        if(atribute=="." || atribute =="Machine") {
+                            level = "Machine";
+                            break;
+                        }
+                        level = atribute;
+                        break;
                     }
                     case 4:{
-
+                        if(atribute=="SAVE"){
+                            std::cout<<"No file to save to!"<<std::endl;
+                            break;
+                        }
+                        std::cout<<"save";
+                        break;
                     }
                     case 5:{
-
+                        if(atribute=="READ"){
+                            std::cout<<"No file to read from!"<<std::endl;
+                            break;
+                        }
+                        std::cout<<"read";
+                        break;
+                    }
+                    case 6:{
+                        Utilities::Tree();
+                        break;
+                    }
+                    case 7:{
+                        exit(0);
+                    }
+                    case 8:{
+                        Utilities::CommandList();
+                        break;
                     }
                     default:{
+                        std::cout<<"Couldn't Find!"<<std::endl;
                         break;
                     }
 
                 }
                 break;
             }
+
             if (level == "Jet" || level == " Helicopter " || level == "Submarine" || level == " Ship " ||
                 level == "Rocket") {
-                std::cout << "Jestem w jecie";
+
+                switch( SecondLevel::commandToInt(command, atribute) ){
+                    case 0:{
+                        if(atribute == "." ){
+                            level = "Machine";
+                            break;
+                        }
+                        level = atribute;
+                        break;
+
+                    }
+                    case 1:{
+
+                    }
+                }
                 break;
 
             }
-
         }
     }
 }

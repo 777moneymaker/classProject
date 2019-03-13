@@ -85,10 +85,22 @@
 		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/Class.h">
 			<Option target="Projekt_PPO"/>
 		</Unit>
-		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/MainFunctions.h">
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/GlobalVariables.h">
 			<Option target="Projekt_PPO"/>
 		</Unit>
-		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/MainFunctions.cpp">
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/MenuFunctions.h">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/ObjectsFunctions.h">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/ClassMethods.cpp">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/MenuFunctions.cpp">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/ObjectsFunctions.cpp">
 			<Option target="Projekt_PPO"/>
 		</Unit>
 		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/main.cpp">

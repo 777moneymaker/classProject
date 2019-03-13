@@ -6,7 +6,7 @@
 #define PROJEKT_PPO_CLASS_H
 
 #include<iostream>
-#include "MainFunctions.h"
+#include "MenuFunctions.h"
 
 //  base class
 class Machine {
