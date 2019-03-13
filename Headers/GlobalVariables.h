@@ -10,11 +10,11 @@
 
 extern std::string level;
 
-extern Jet *JetNext;
-extern Helicopter *HeliNext;
-extern Submarine *SubNext;
-extern Ship *ShipNext;
-extern Rocket *RocketNext;
+extern Jet *JetHead;
+extern Helicopter *HeliHead;
+extern Submarine *SubHead;
+extern Ship *ShipHead;
+extern Rocket *RocketHead;
 
 
 #endif //PROJEKT_PPO_GLOBALVARIABLES_H

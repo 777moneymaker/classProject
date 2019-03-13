@@ -6,7 +6,6 @@
 #include "Headers/Class.h"
 #include "Headers/MenuFunctions.h"
 #include "Headers/GlobalVariables.h"
-#include "Headers/ObjectsFunctions.h"
 
 
 void Utilities::CommandList(){
@@ -220,7 +219,7 @@ int SecondLevel::commandToInt(std::string command, std::string atribute) {
         return 0;
 
     }else if(command == "MO") {
-
+        return 1;
     }else if(command == "DO") {
 
     }else if(command == "MDO") {

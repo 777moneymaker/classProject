@@ -1,8 +1,0 @@
-//
-// Created by Miłosz Chodkowski on 2019-03-13.
-//
-
-#ifndef PROJEKT_PPO_OBJECTSFUNCTIONS_H
-#define PROJEKT_PPO_OBJECTSFUNCTIONS_H
-
-#endif //PROJEKT_PPO_OBJECTSFUNCTIONS_H

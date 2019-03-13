@@ -15,6 +15,8 @@ private:
 
 protected:
     float power;
+public:
+    std::string name;
 };
 
 // ************************************* 1st subclasses
@@ -65,6 +67,7 @@ protected:
 
 public:
     Jet *next;
+    void InsertNewJet();
 };
 
 class Helicopter : public FlyingMachine {
@@ -76,6 +79,7 @@ protected:
 
 public:
     Helicopter *next;
+    void insertNewHeli();
 };
 
 class Submarine : public FloatingMachine {
@@ -87,6 +91,7 @@ protected:
 
 public:
     Submarine *next;
+    void insertNewSubmarine();
 };
 
 class Ship : public FloatingMachine {
@@ -98,10 +103,11 @@ protected:
 
 public:
     Ship *next;
+    void insertNewShip();
 };
 
 class Rocket : public SpaceMachine {
-public:
+private:
     std::string missionType;
 
 protected:
@@ -109,6 +115,7 @@ protected:
 
 public:
     Rocket *next;
+    void insertNewRocket();
 };
 // *************************************
 #endif //PROJEKT_PPO_CLASS_H

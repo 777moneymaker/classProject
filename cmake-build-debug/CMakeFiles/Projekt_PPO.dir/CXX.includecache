@@ -6,22 +6,6 @@
 
 #IncludeRegexTransform: 
 
-.././Headers/Class.h
-iostream
--
-MenuFunctions.h
-.././Headers/MenuFunctions.h
-
-.././Headers/GlobalVariables.h
-iostream
--
-Headers/Class.h
-.././Headers/Headers/Class.h
-
-.././Headers/MenuFunctions.h
-
-.././Headers/ObjectsFunctions.h
-
 /Users/777moneymaker/Desktop/Projekt PPO/Headers/Class.h
 iostream
 -
@@ -36,20 +20,6 @@ Headers/Class.h
 
 /Users/777moneymaker/Desktop/Projekt PPO/Headers/MenuFunctions.h
 
-/Users/777moneymaker/Desktop/Projekt PPO/Headers/ObjectsFunctions.h
-
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/MenuFunctions.cpp
-iostream
--
-Headers/Class.h
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/Class.h
-Headers/MenuFunctions.h
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/MenuFunctions.h
-Headers/GlobalVariables.h
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/GlobalVariables.h
-Headers/ObjectsFunctions.h
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/ObjectsFunctions.h
-
 /Users/777moneymaker/Desktop/Projekt PPO/main.cpp
 iostream
 -
@@ -61,6 +31,4 @@ Headers/MenuFunctions.h
 /Users/777moneymaker/Desktop/Projekt PPO/Headers/MenuFunctions.h
 Headers/GlobalVariables.h
 /Users/777moneymaker/Desktop/Projekt PPO/Headers/GlobalVariables.h
-Headers/ObjectsFunctions.h
-/Users/777moneymaker/Desktop/Projekt PPO/Headers/ObjectsFunctions.h
 

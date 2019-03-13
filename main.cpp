@@ -3,16 +3,16 @@
 #include "Headers/Class.h"
 #include "Headers/MenuFunctions.h"
 #include "Headers/GlobalVariables.h"
-#include "Headers/ObjectsFunctions.h"
 
 std::string level = "Machine";
-Jet *JetNext = NULL;
-Helicopter *HeliNext = NULL;
-Submarine *SubNext = NULL;
-Ship *ShipNext = NULL;
-Rocket *RocketNext = NULL;
+Jet *JetHead = NULL;
+Helicopter *HeliHead = NULL;
+Submarine *SubHead = NULL;
+Ship *ShipHead = NULL;
+Rocket *RocketHead = NULL;
 
 int main() {
+
     std::string input;
     Utilities::MenuGenerator();
 
@@ -20,14 +20,15 @@ int main() {
     std::cout << "~ ";
 
     std::cin.clear();
-    getline(std::cin, input);
+    std::getline(std::cin, input);
     int pos = input.find_first_of(" ");
     std::string atribute = input.substr(pos + 1), command = input.substr(0, pos);
 
     while (command != "START") {
         std::cout << " Type only one word with capital letters - START" << std::endl;
+
         std::cin.clear();
-        getline(std::cin, input);
+        std::getline(std::cin, input);
         pos = input.find_first_of(" ");
         atribute = input.substr(pos + 1);
         command = input.substr(0, pos);
@@ -39,13 +40,12 @@ int main() {
         std::cout << "Enter the command" << std::endl;
         std::cout << "~ " + level + ": ";
 
-        std::cin.clear();
-        getline(std::cin, input);
+        std::getline(std::cin, input);
         pos = input.find_first_of(" ");
         atribute = input.substr(pos + 1);
         command = input.substr(0, pos);
 
-        while (Base::isCommandGood(command, atribute) || FirstLevel::isCommandGood(command, atribute)) {
+        while (Base::isCommandGood(command, atribute) || FirstLevel::isCommandGood(command, atribute) || SecondLevel::isCommandGood(command, atribute)) {
 
             if (level == "Machine") {
                 switch (Base::commandToInt(command, atribute)) {
@@ -174,8 +174,10 @@ int main() {
                         break;
 
                     }
-                    case 1:{
-
+                    case 1 :{
+                        if(level == "Jet")
+                            JetHead->InsertNewJet();
+                        break;
                     }
                 }
                 break;
