@@ -10,6 +10,7 @@ namespace Utilities{
     void CommandList();
     void Tree();
     void MenuGenerator(); // prints info about commands
+    void pathName();
 }
 
 namespace Base {
@@ -21,7 +22,6 @@ namespace FirstLevel {
     bool isCommandGood(std::string command, std::string atribute);
     int commandToInt(std::string command, std::string atribute);
 }
-
 namespace SecondLevel{
     bool isCommandGood(std::string command, std::string atribute);
     int commandToInt(std::string command, std::string atribute);

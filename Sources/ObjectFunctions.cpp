@@ -9,19 +9,19 @@
 #include "Headers/GlobalVariables.h"
 #include "Headers/ObjectFunctions.h"
 
-void List::insertNode() {
+void List::insertNode(std::string name) {
     if (level == "Jet") {
-        JetHead->insertNewJet();
+        JetHead->insertNewJet(name);
     } else if (level == "Helicopter") {
-        HeliHead->insertNewHeli();
+        HeliHead->insertNewHeli(name);
     } else if (level == "Submarine") {
-        SubHead->insertNewSubmarine();
+        SubHead->insertNewSubmarine(name);
     } else if (level == "Ship") {
-        ShipHead->insertNewShip();
+        ShipHead->insertNewShip(name);
     } else if (level == "Rocket") {
-        RocketHead->insertNewRocket();
+        RocketHead->insertNewRocket(name);
     } else if (level == "WheelMachine"){
-        MachineHead->insertNewVehicle();
+        MachineHead->insertNewVehicle(name);
     }else{
         std::cout<<"Wrong level!"<<std::endl;
     }

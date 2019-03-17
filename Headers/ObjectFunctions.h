@@ -11,7 +11,7 @@
 #include "Headers/GlobalVariables.h"
 
 namespace List{
-    void insertNode();
+    void insertNode(std::string name);
     void printObjects();
     void deleteNodeByName(std::string name);
 

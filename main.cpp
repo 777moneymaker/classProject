@@ -1,3 +1,7 @@
+//
+// Created by Miłosz Chodkowski on 2019-03-12.
+//
+
 #include <iostream>
 #include <string>
 #include "Headers/Class.h"
@@ -35,16 +39,16 @@ int main() {
     }
 
     while (true) {
-        std::cout<<std::endl;
-        std::cout << "Enter the command" << std::endl;
-        std::cout << "~ " + level + ": ";
+        Utilities::pathName();
 
         std::getline(std::cin, input);
         pos = input.find_first_of(" ");
         atribute = input.substr(pos + 1);
         command = input.substr(0, pos);
 
-        while (Base::isCommandGood(command, atribute) || FirstLevel::isCommandGood(command, atribute) || SecondLevel::isCommandGood(command, atribute)) {
+        while (Base::isCommandGood(command, atribute) ||
+        FirstLevel::isCommandGood(command, atribute) ||
+        SecondLevel::isCommandGood(command, atribute)) {
 
             if (level == "Machine") {                                //********************* base level
                 switch (Base::commandToInt(command, atribute)) {
@@ -82,37 +86,46 @@ int main() {
                 break;
             }
 
-            if (level == "FlyingMachine" || level == "FloatingMachine" || level == "WheelMachine" ||
+            if (level == "FlyingMachine" ||
+            level == "FloatingMachine" ||
+            level == "WheelMachine" ||
             level == "SpaceMachine"){    // ********************** 1st level
                 switch (FirstLevel::commandToInt(command, atribute)) {
-                    case 0:
+                    case 0:    // switches to another class
                         if(atribute==".")
                             level = "Machine";
                         else
                             level = atribute;
                         break;
                     case 1:
-                        List::insertNode();
-                            break;
+                        List::insertNode(atribute);  // insertion depends on level status
+                        break;
                     case 2:
                         List::deleteNodeByName(atribute);
+                        break;
                     case 3:
+                        // object modification
                         break;
                     case 4:
                         List::printObjects();
                         break;
                     case 5:
-
+                        // SHOW - info about object
+                        break;
                     case 6:
+                        // SAVE
                         break;
                     case 7:
-                        exit(0);
+                        // READ
+                        break;
                     case 8:
                         Utilities::Tree();
                         break;
                     case 9:
                         Utilities::CommandList();
                         break;
+                    case 10:
+                        exit(0);
                     default:
                         std::cout<<"Couldn't Find!"<<std::endl;
                         break;
@@ -120,8 +133,11 @@ int main() {
                 break;
             }
 
-            if (level == "Jet" || level == " Helicopter " || level == "Submarine"
-            || level == " Ship " || level == "Rocket") {    // ***************** 2nd level
+            if (level == "Jet" ||
+            level == " Helicopter " ||
+            level == "Submarine" ||
+            level == " Ship " ||
+            level == "Rocket") {    // ***************** 2nd level
                 switch( SecondLevel::commandToInt(command, atribute) ){
                     case 0:
                         if(atribute == "." ){
@@ -131,15 +147,36 @@ int main() {
                         level = atribute;
                         break;
                     case 1 :
-                        List::insertNode();
+                        List::insertNode(atribute);
                         break;
                     case 2:
                         List::deleteNodeByName(atribute);
                         break;
                     case 3:
+                        // Modificate object
                         break;
                     case 4:
                         List::printObjects();
+                        break;
+                    case 5:
+                        //SHOW
+                        break;
+                    case 6:
+                        //SAVE
+                        break;
+                    case 7:
+                        //READ
+                        break;
+                    case 8:
+                        Utilities::Tree();
+                        break;
+                    case 9:
+                        Utilities::CommandList();
+                        break;
+                    case 10:
+                        exit(0);
+                    default:
+                        std::cout<<"Couldn't find that!"<<std::endl;
                         break;
                 }
                 break;
@@ -148,5 +185,3 @@ int main() {
         }
     }
 }
-
-

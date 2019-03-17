@@ -12,7 +12,6 @@
 class Machine {
 private:
     float mass;
-
 protected:
     float power;
 public:
@@ -23,12 +22,11 @@ public:
 class WheelMachine : public Machine {
 private:
     int numOfWheels;
-
 protected:
     std::string engineType;
 public:
     WheelMachine *next;
-    void insertNewVehicle();
+    void insertNewVehicle(std::string name);
     void deleteMachine(WheelMachine *del);
     void printObjects();
 };
@@ -71,7 +69,7 @@ protected:
 
 public:
     Jet *next;
-    void insertNewJet();
+    void insertNewJet(std::string name);
     void deleteJet(Jet *del);
     void printObjects();
 };
@@ -85,7 +83,7 @@ protected:
 
 public:
     Helicopter *next;
-    void insertNewHeli();
+    void insertNewHeli(std::string name);
     void deleteHeli(Helicopter *del);
     void printObjects();
 };
@@ -99,7 +97,7 @@ protected:
 
 public:
     Submarine *next;
-    void insertNewSubmarine();
+    void insertNewSubmarine(std::string name);
     void deleteSubmarine(Submarine *del);
     void printObjects();
 };
@@ -113,7 +111,7 @@ protected:
 
 public:
     Ship *next;
-    void insertNewShip();
+    void insertNewShip(std::string name);
     void deleteShip(Ship *del);
     void printObjects();
 };
@@ -127,7 +125,7 @@ protected:
 
 public:
     Rocket *next;
-    void insertNewRocket();
+    void insertNewRocket(std::string name);
     void deleteRocket(Rocket *del);
     void printObjects();
 };

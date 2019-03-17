@@ -11,7 +11,7 @@
 void Utilities::CommandList(){
     std::cout<<"           * HELP - prints all the commands that you can use\n"
           "                * CD - change directory (CD *level*)\n"
-          "                * MO - make object for given class\n"
+          "                * MO - make object for given class (MO *name*)\n"
           "                * DO - delete object \n"
           "                * MDO - modificate object\n"
           "                * DIR - prints every object in given class\n"
@@ -45,6 +45,26 @@ void Utilities::Tree(){
 
 void Utilities::MenuGenerator() {   // prints info about commands
     CommandList();
+}
+
+void Utilities::pathName(){
+    if(level == "Machine"){
+        std::cout << "Enter command" << std::endl;
+        std::cout << "/" + level + ":~ ";
+    }else if(level =="FloatingMachine" ||
+    level == "FlyingMachine" ||
+    level == "SpaceMachine" ||
+    level == "WheelMachine" ){
+        std::cout << "Enter command" << std::endl;
+        std::cout << "Machine/" + level + ":~ ";
+    }else if(level == "Jet" ||
+    level == "Helicopter" ||
+    level == "Ship" ||
+    level == "Submarine" ||
+    level == "Rocket"){
+        std::cout << "Enter command" << std::endl;
+        std::cout << "Machine/.../" + level + ":~ ";
+    }
 }
 
 bool Base::isCommandGood(std::string command, std::string atribute) {
@@ -104,9 +124,11 @@ bool FirstLevel::isCommandGood(std::string command, std::string atribute) {
         return true;
     } else if (command == "DO") {
         return true;
-    } else if (command == "MO") {
+    } else if (command == "MO" && atribute == "MO") {
         return false;
-    } else if (command == "MDO") {
+    }else if(command == "MO"){
+        return true;
+    }else if (command == "MDO") {
         return false;
     } else if (command == "DIR") {
         return true;
@@ -172,7 +194,9 @@ bool SecondLevel::isCommandGood(std::string command, std::string atribute) {
         return true;
     } else if (command == "DO") {
         return true;
-    } else if (command == "MO") {
+    } else if (command == "MO" && atribute == "MO") {
+        return false;
+    }else if(command == "MO"){
         return true;
     } else if (command == "MDO") {
         return true;

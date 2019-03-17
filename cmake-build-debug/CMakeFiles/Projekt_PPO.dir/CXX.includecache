@@ -20,11 +20,13 @@ Headers/Class.h
 
 .././Headers/MenuFunctions.h
 
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/ClassMethods.cpp
+/Users/777moneymaker/Desktop/Projekt PPO/Sources/MenuFunctions.cpp
 iostream
--
-Headers/GlobalVariables.h
 -
 Headers/Class.h
 /Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/Class.h
+Headers/MenuFunctions.h
+/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/MenuFunctions.h
+Headers/GlobalVariables.h
+/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/GlobalVariables.h
 

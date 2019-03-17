@@ -6,18 +6,14 @@
 #include <Headers/GlobalVariables.h>
 #include "Headers/Class.h"
 
-void WheelMachine::insertNewVehicle() {
+void WheelMachine::insertNewVehicle(std::string name) {
     WheelMachine *newMachine = new WheelMachine;
 
     int numOfWheels;
     std::string engineType;
     float power;
-    std::string name;
 
     std::cout << "Set parameters for new Vehicle:" << std::endl;
-    std::cout <<"Set name: ";
-    std::cin>>name;
-
     std::cout <<"Set num of wheels: ";
     std::cin>>numOfWheels;
 
@@ -43,20 +39,16 @@ void WheelMachine::insertNewVehicle() {
     return;
 }
 
-void Jet::insertNewJet() {
+void Jet::insertNewJet(std::string name) {
     Jet *newJet = new Jet;
 
     float power;
-    std::string name;
     std::string landingGear;
     std::string colour;
     std::string weaponType;
     float maxSpeed;
 
     std::cout << "Set parameters for new Jet:" << std::endl;
-    std::cout <<"Set name: ";
-    std::cin>>name;
-
     std::cout <<"Set power: ";
     std::cin>>power;
 
@@ -91,19 +83,15 @@ void Jet::insertNewJet() {
     return;
 }
 
-void Helicopter::insertNewHeli() {
+void Helicopter::insertNewHeli(std::string name) {
     Helicopter *newHeli = new Helicopter;
 
     float power;
-    std::string name;
     std::string landingGear;
     std::string heliType;
     float maxRPM;
 
     std::cout << "Set parameters for new Helicopter:" << std::endl;
-    std::cout <<"Set name: ";
-    std::cin>> name;
-
     std::cout <<"Set power: ";
     std::cin>> power;
 
@@ -135,19 +123,15 @@ void Helicopter::insertNewHeli() {
     return;
 }
 
-void Submarine::insertNewSubmarine() {
+void Submarine::insertNewSubmarine(std::string name) {
     Submarine *newSub = new Submarine;
 
     float power;
-    std::string name;
     std::string powerSupplyType;
     std::string typeOfPropulsion;
     float maxSpeed;
 
     std::cout << "Set parameters for new Submarine:" << std::endl;
-    std::cout <<"Set name: ";
-    std::cin>> name;
-
     std::cout <<"Set power: ";
     std::cin>> power;
 
@@ -178,19 +162,15 @@ void Submarine::insertNewSubmarine() {
     return;
 }
 
-void Ship::insertNewShip() {
+void Ship::insertNewShip(std::string name) {
     Ship *newShip = new Ship;
 
     float power;
-    std::string name;
     std::string powerSupplyType;
     int numOfSeats;
     std::string shipType;
 
     std::cout << "Set parameters for new Ship" << std::endl;
-    std::cout <<"Set name: ";
-    std::cin>> name;
-
     std::cout <<"Set power: ";
     std::cin>> power;
 
@@ -221,19 +201,15 @@ void Ship::insertNewShip() {
     return;
 }
 
-void Rocket::insertNewRocket() {
+void Rocket::insertNewRocket(std::string name) {
     Rocket *newRocket = new Rocket;
 
     float power;
-    std::string name;
     float gasTankVolume;
     std::string missionType;
     float maxRange;
 
     std::cout << "Set parameters for new Rocket" << std::endl;
-    std::cout <<"Set name: ";
-    std::cin>> name;
-
     std::cout <<"Set power: ";
     std::cin>> power;
 
@@ -461,6 +437,5 @@ void Rocket::printObjects() {
         std::cout <<"Max range: "<<temp->maxRange<<std::endl;
         std::cout<<std::endl;
         temp=temp->next;
-
     }
 }
