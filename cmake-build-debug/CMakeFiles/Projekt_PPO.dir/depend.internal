@@ -11,8 +11,15 @@ CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.o
  .././Headers/GlobalVariables.h
  .././Headers/MenuFunctions.h
  /Users/777moneymaker/Desktop/Projekt PPO/Sources/MenuFunctions.cpp
+CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.o
+ .././Headers/Class.h
+ .././Headers/GlobalVariables.h
+ .././Headers/MenuFunctions.h
+ .././Headers/ObjectFunctions.h
+ /Users/777moneymaker/Desktop/Projekt PPO/Sources/ObjectFunctions.cpp
 CMakeFiles/Projekt_PPO.dir/main.cpp.o
  /Users/777moneymaker/Desktop/Projekt PPO/Headers/Class.h
  /Users/777moneymaker/Desktop/Projekt PPO/Headers/GlobalVariables.h
  /Users/777moneymaker/Desktop/Projekt PPO/Headers/MenuFunctions.h
+ /Users/777moneymaker/Desktop/Projekt PPO/Headers/ObjectFunctions.h
  /Users/777moneymaker/Desktop/Projekt PPO/main.cpp

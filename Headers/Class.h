@@ -30,6 +30,7 @@ public:
     WheelMachine *next;
     void insertNewVehicle();
     void deleteMachine(WheelMachine *del);
+    void printObjects();
 };
 
 class FlyingMachine : public Machine {
@@ -72,6 +73,7 @@ public:
     Jet *next;
     void insertNewJet();
     void deleteJet(Jet *del);
+    void printObjects();
 };
 
 class Helicopter : public FlyingMachine {
@@ -85,6 +87,7 @@ public:
     Helicopter *next;
     void insertNewHeli();
     void deleteHeli(Helicopter *del);
+    void printObjects();
 };
 
 class Submarine : public FloatingMachine {
@@ -98,6 +101,7 @@ public:
     Submarine *next;
     void insertNewSubmarine();
     void deleteSubmarine(Submarine *del);
+    void printObjects();
 };
 
 class Ship : public FloatingMachine {
@@ -111,6 +115,7 @@ public:
     Ship *next;
     void insertNewShip();
     void deleteShip(Ship *del);
+    void printObjects();
 };
 
 class Rocket : public SpaceMachine {
@@ -124,6 +129,7 @@ public:
     Rocket *next;
     void insertNewRocket();
     void deleteRocket(Rocket *del);
+    void printObjects();
 };
 // *************************************
 #endif //PROJEKT_PPO_CLASS_H

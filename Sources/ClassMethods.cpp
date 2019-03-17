@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include <Headers/GlobalVariables.h>
-#include <opencl-c.h>
 #include "Headers/Class.h"
 
 void WheelMachine::insertNewVehicle() {
@@ -34,17 +33,13 @@ void WheelMachine::insertNewVehicle() {
     newMachine->numOfWheels = numOfWheels;
     newMachine->engineType = engineType;
     newMachine->power = power;
-    newMachine->next = NULL;
 
     if(MachineHead == NULL) {
         MachineHead = newMachine;
         return;
     }
-
-    while(MachineHead->next != NULL)
-        MachineHead = MachineHead->next;
-    MachineHead->next = newMachine;
-    MachineHead = newMachine;
+    newMachine->next = MachineHead;
+    MachineHead=newMachine;
     return;
 }
 
@@ -85,16 +80,13 @@ void Jet::insertNewJet() {
     newJet->colour = colour;
     newJet->weaponType = weaponType;
     newJet->maxSpeed = maxSpeed;
-    newJet->next = NULL;
+    newJet->next=NULL;
 
     if(JetHead == NULL) {
         JetHead = newJet;
         return;
     }
-
-    while(JetHead->next != NULL)
-        JetHead = JetHead->next;
-    JetHead->next = newJet;
+    newJet->next = JetHead;
     JetHead = newJet;
     return;
 }
@@ -109,11 +101,11 @@ void Helicopter::insertNewHeli() {
     float maxRPM;
 
     std::cout << "Set parameters for new Helicopter:" << std::endl;
-    std::cout <<"Set power: ";
-    std::cin>> power;
-
     std::cout <<"Set name: ";
     std::cin>> name;
+
+    std::cout <<"Set power: ";
+    std::cin>> power;
 
     std::cout <<"Set landing gear: ";
     std::cin>> landingGear;
@@ -132,16 +124,13 @@ void Helicopter::insertNewHeli() {
     newHeli->landingGear = landingGear;
     newHeli->heliType = heliType;
     newHeli->maxRPM = maxRPM;
-    newHeli->next = NULL;
+    newHeli->next=NULL;
 
     if(HeliHead == NULL) {
         HeliHead = newHeli;
         return;
     }
-
-    while(HeliHead->next != NULL)
-        HeliHead = HeliHead->next;
-    HeliHead->next = newHeli;
+    newHeli->next = HeliHead;
     HeliHead = newHeli;
     return;
 }
@@ -156,11 +145,11 @@ void Submarine::insertNewSubmarine() {
     float maxSpeed;
 
     std::cout << "Set parameters for new Submarine:" << std::endl;
-    std::cout <<"Set power: ";
-    std::cin>> power;
-
     std::cout <<"Set name: ";
     std::cin>> name;
+
+    std::cout <<"Set power: ";
+    std::cin>> power;
 
     std::cout <<"Set power supply type: ";
     std::cin>> powerSupplyType;
@@ -178,16 +167,13 @@ void Submarine::insertNewSubmarine() {
     newSub->powerSupplyType = powerSupplyType;
     newSub->typeOfPropulsion = typeOfPropulsion;
     newSub->maxSpeed = maxSpeed;
-    newSub->next = NULL;
+    newSub->next=NULL;
 
     if(SubHead == NULL) {
         SubHead = newSub;
         return;
     }
-
-    while(SubHead->next != NULL)
-        SubHead = SubHead->next;
-    SubHead->next = newSub;
+    newSub->next = SubHead;
     SubHead = newSub;
     return;
 }
@@ -202,11 +188,11 @@ void Ship::insertNewShip() {
     std::string shipType;
 
     std::cout << "Set parameters for new Ship" << std::endl;
-    std::cout <<"Set power: ";
-    std::cin>> power;
-
     std::cout <<"Set name: ";
     std::cin>> name;
+
+    std::cout <<"Set power: ";
+    std::cin>> power;
 
     std::cout <<"Set power supply type: ";
     std::cin>> powerSupplyType;
@@ -224,16 +210,13 @@ void Ship::insertNewShip() {
     newShip->powerSupplyType = powerSupplyType;
     newShip->numOfSeats = numOfSeats;
     newShip->shipType = shipType;
-    newShip->next = NULL;
+    newShip->next=NULL;
 
     if(ShipHead == NULL) {
         ShipHead = newShip;
         return;
     }
-
-    while(ShipHead->next != NULL)
-        ShipHead = ShipHead->next;
-    ShipHead->next = newShip;
+    newShip->next = ShipHead;
     ShipHead = newShip;
     return;
 }
@@ -248,11 +231,11 @@ void Rocket::insertNewRocket() {
     float maxRange;
 
     std::cout << "Set parameters for new Rocket" << std::endl;
-    std::cout <<"Set power: ";
-    std::cin>> power;
-
     std::cout <<"Set name: ";
     std::cin>> name;
+
+    std::cout <<"Set power: ";
+    std::cin>> power;
 
     std::cout <<"Set gas tank volume: ";
     std::cin>> gasTankVolume;
@@ -270,16 +253,13 @@ void Rocket::insertNewRocket() {
     newRocket->gasTankVolume=gasTankVolume;
     newRocket->missionType = missionType;
     newRocket->maxRange = maxRange;
-    newRocket->next = NULL;
+    newRocket->next=NULL;
 
     if(RocketHead == NULL) {
         RocketHead = newRocket;
         return;
     }
-
-    while(RocketHead->next != NULL)
-        RocketHead = RocketHead->next;
-    RocketHead->next = newRocket;
+    newRocket->next = newRocket;
     RocketHead = newRocket;
     return;
 }
@@ -287,91 +267,200 @@ void Rocket::insertNewRocket() {
 void WheelMachine::deleteMachine(WheelMachine *del) {
     if(MachineHead==NULL || del == NULL)
         return;
-    if(MachineHead == del)
-        MachineHead=del->next;
+    if(MachineHead == del) {
+        MachineHead = MachineHead->next;
+        delete (del);
+        return;
+    }
     if(del->next != NULL){
         WheelMachine *temp;
         while(temp->next != del)
             temp=temp->next;
         temp->next=temp->next->next;
+        delete(del);
+        return;
     }
-    delete(del);
     return;
 }
 
 void Jet::deleteJet(Jet *del) {
-    if (JetHead == NULL || del == NULL)
+    if (JetHead == NULL || del == NULL) {
         return;
-    if (JetHead == del)
-        JetHead = del->next;
+    }
+    if (del == JetHead) {
+        JetHead = JetHead->next;
+        delete(del);
+        return;
+    }
     if (del->next != NULL) {
         Jet *temp = JetHead;
         while (temp->next != del)
             temp = JetHead->next;
         temp->next = temp->next->next;
+        delete (del);
+        return;
     }
-    delete (del);
     return;
 }
 
 void Helicopter::deleteHeli(Helicopter *del) {
     if(HeliHead==NULL || del == NULL)
         return;
-    if(HeliHead == del)
-        HeliHead=del->next;
+    if(HeliHead == del) {
+        HeliHead = HeliHead->next;
+        delete(del);
+        return;
+    }
     if(del->next != NULL){
         Helicopter *temp = HeliHead;
         while(temp->next != del)
             temp = temp->next;
-        temp->next= temp->next->next
+        temp->next= temp->next->next;
+        delete(del);
+        return;
     }
-    delete(del);
     return;
 }
 
 void Submarine::deleteSubmarine(Submarine *del) {
     if(SubHead==NULL || del == NULL)
         return;
-    if(SubHead == del)
-        SubHead=del->next;
-    if(del->next != NULL){
-        Submarine *temp = SubHead;
-        while(temp->next != del)
-            temp = temp->next;
-        temp->next= temp->next->next
+    if(SubHead == del) {
+        SubHead = SubHead->next;
+        delete (del);
+        return;
     }
-    delete(del);
+    if(del->next != NULL) {
+        Submarine *temp = SubHead;
+        while (temp->next != del)
+            temp = temp->next;
+        temp->next = temp->next->next;
+        delete (del);
+        return;
+    }
     return;
 }
 
 void Ship::deleteShip(Ship *del) {
     if(ShipHead==NULL || del == NULL)
         return;
-    if(ShipHead == del)
-        ShipHead=del->next;
+    if(ShipHead == del) {
+        ShipHead = ShipHead->next;
+        delete(del);
+        return;
+    }
     if(del->next != NULL){
         Ship *temp = ShipHead;
         while(temp->next != del) {
             temp = temp->next;
         }
-        temp->next= temp->next->next
+        temp->next= temp->next->next;
+        delete(del);
+        return;
     }
-    delete(del);
     return;
 }
 
 void Rocket::deleteRocket(Rocket *del) {
     if(RocketHead==NULL || del == NULL)
         return;
-    if(RocketHead == del)
-        RocketHead=del->next;
+    if(RocketHead == del) {
+        RocketHead = del->next;
+        delete(del);
+        return;
+    }
     if(del->next != NULL){
         Rocket *temp = RocketHead;
-        while(temp->next != del) {
+        while(temp->next != del)
             temp = temp->next;
-        }
-        temp->next= temp->next->next
+        temp->next= temp->next->next;
+        delete(del);
+        return;
     }
-    delete(del);
     return;
+}
+
+void WheelMachine::printObjects() {
+    WheelMachine *temp = MachineHead;
+        while(temp){
+            std::cout<<std::endl;
+            std::cout <<"Name: "<< temp->name<<std::endl;
+            std::cout <<"Num of wheels: "<<temp->numOfWheels<<std::endl;
+            std::cout <<"Engine type: "<<temp->engineType<<std::endl;
+            std::cout <<"Power: "<<temp->power<<std::endl;
+            std::cout<<std::endl;
+            temp=temp->next;
+        }
+}
+
+void Jet::printObjects() {
+    Jet *temp = JetHead;
+    while(temp){
+        std::cout<<std::endl;
+        std::cout <<"Name: "<<temp->name<<std::endl;
+        std::cout <<"Power: "<<temp->power<<std::endl;
+        std::cout <<"Landing gear: "<<temp->landingGear<<std::endl;
+        std::cout <<"Colour: "<<temp->colour<<std::endl;
+        std::cout <<"Weapon type: "<<temp->weaponType<<std::endl;
+        std::cout <<"Max speed: "<<temp->maxSpeed<<std::endl;
+        std::cout<<std::endl;
+        temp=temp->next;
+    }
+}
+
+void Helicopter::printObjects() {
+    Helicopter *temp = HeliHead;
+    while(temp){
+        std::cout<<std::endl;
+        std::cout <<"Name: "<<temp->name<<std::endl;
+        std::cout <<"Power: "<<temp->power<<std::endl;
+        std::cout <<"Landing gear: "<<temp->landingGear<<std::endl;
+        std::cout <<"Helicopter type: "<<temp->heliType<<std::endl;
+        std::cout <<"Max RPM: "<<temp->maxRPM<<std::endl;
+        std::cout<<std::endl;
+        temp=temp->next;
+    }
+}
+
+void Submarine::printObjects() {
+    Submarine *temp = SubHead;
+    while(temp){
+        std::cout<<std::endl;
+        std::cout <<"Name: "<<temp->name<<std::endl;
+        std::cout <<"Power: "<<temp->power<<std::endl;
+        std::cout <<"Power supply type: "<<temp->powerSupplyType<<std::endl;
+        std::cout <<"Type of propulsion: "<<temp->typeOfPropulsion<<std::endl;
+        std::cout<<"Max speed: "<<temp->maxSpeed<<std::endl;
+        std::cout<<std::endl;
+        temp=temp->next;
+    }
+}
+
+void Ship::printObjects() {
+    Ship *temp = ShipHead;
+    while(temp){
+        std::cout<<std::endl;
+        std::cout <<"Name: "<<temp->name<<std::endl;
+        std::cout <<"Power: "<<temp->power<<std::endl;
+        std::cout <<"Power supply type: "<<temp->powerSupplyType<<std::endl;
+        std::cout <<"Number of seats: "<<temp->numOfSeats<<std::endl;
+        std::cout <<"Ship type: "<<temp->shipType<<std::endl;
+        std::cout<<std::endl;
+        temp=temp->next;
+    }
+}
+
+void Rocket::printObjects() {
+    Rocket *temp = RocketHead;
+    while(temp){
+        std::cout<<std::endl;
+        std::cout <<"Name: "<<temp->name<<std::endl;
+        std::cout <<"Power: "<<temp->power<<std::endl;
+        std::cout <<"Gas tank volume: "<<temp->gasTankVolume<<std::endl;
+        std::cout <<"Mission type "<<temp->missionType<<std::endl;
+        std::cout <<"Max range: "<<temp->maxRange<<std::endl;
+        std::cout<<std::endl;
+        temp=temp->next;
+
+    }
 }

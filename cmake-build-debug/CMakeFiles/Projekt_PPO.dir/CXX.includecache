@@ -20,20 +20,6 @@ Headers/Class.h
 
 .././Headers/MenuFunctions.h
 
-/Users/777moneymaker/Desktop/Projekt PPO/Headers/Class.h
-iostream
--
-MenuFunctions.h
-/Users/777moneymaker/Desktop/Projekt PPO/Headers/MenuFunctions.h
-
-/Users/777moneymaker/Desktop/Projekt PPO/Headers/GlobalVariables.h
-iostream
--
-Headers/Class.h
-/Users/777moneymaker/Desktop/Projekt PPO/Headers/Headers/Class.h
-
-/Users/777moneymaker/Desktop/Projekt PPO/Headers/MenuFunctions.h
-
 /Users/777moneymaker/Desktop/Projekt PPO/Sources/ClassMethods.cpp
 iostream
 -
@@ -41,16 +27,4 @@ Headers/GlobalVariables.h
 -
 Headers/Class.h
 /Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/Class.h
-
-/Users/777moneymaker/Desktop/Projekt PPO/main.cpp
-iostream
--
-string
--
-Headers/Class.h
-/Users/777moneymaker/Desktop/Projekt PPO/Headers/Class.h
-Headers/MenuFunctions.h
-/Users/777moneymaker/Desktop/Projekt PPO/Headers/MenuFunctions.h
-Headers/GlobalVariables.h
-/Users/777moneymaker/Desktop/Projekt PPO/Headers/GlobalVariables.h
 

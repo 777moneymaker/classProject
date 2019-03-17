@@ -12,23 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5f86aca-4741-41ae-ad63-485326177063" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Headers/ObjectFunctions.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/ObjectFunctions.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Headers/Class.h" beforeDir="false" afterPath="$PROJECT_DIR$/Headers/Class.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Headers/GlobalVariables.h" beforeDir="false" afterPath="$PROJECT_DIR$/Headers/GlobalVariables.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Headers/MenuFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Headers/MenuFunctions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Headers/ObjectFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/Headers/ObjectFunctions.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/ClassMethods.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/ClassMethods.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/MenuFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/MenuFunctions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Projekt_PPO.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Projekt_PPO.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/ObjectFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/ObjectFunctions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/main.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -50,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2425">
-              <caret line="164" column="30" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
+            <state relative-caret-position="425">
+              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -65,61 +57,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/ClassMethods.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+            <state relative-caret-position="5670">
+              <caret line="378" column="5" selection-start-line="378" selection-start-column="5" selection-end-line="378" selection-end-column="5" />
               <folding>
                 <element signature="e#54#73#0" expanded="true" />
-                <element signature="e#161#1082#0" />
-                <element signature="e#1084#2142#0" />
-                <element signature="e#2144#3124#0" />
-                <element signature="e#3126#4155#0" />
-                <element signature="e#4157#5148#0" />
-                <element signature="e#5150#6165#0" />
-                <element signature="e#6167#6227#0" />
-                <element signature="e#6528#6880#0" />
-                <element signature="e#6885#7240#0" />
-                <element signature="e#7253#7309#0" />
-                <element signature="e#7583#7624#0" />
-                <element signature="e#7933#8293#0" />
+                <element signature="e#7810#8273#0" />
+                <element signature="e#8275#8797#0" />
+                <element signature="e#8799#9277#0" />
+                <element signature="e#9279#9777#0" />
+                <element signature="e#9779#10260#0" />
+                <element signature="e#10262#10743#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Headers/ObjectFunctions.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
-              <folding>
-                <element signature="e#131#150#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/ObjectFunctions.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+            <state relative-caret-position="1035">
+              <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
               <folding>
                 <element signature="e#54#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/MenuFunctions.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
-              <folding>
-                <element signature="e#54#73#0" expanded="true" />
-                <element signature="e#2164#3049#0" />
-                <element signature="e#3101#3679#0" />
-                <element signature="e#3681#4805#0" />
+                <element signature="e#229#757#0" />
               </folding>
             </state>
           </provider>
@@ -145,16 +105,16 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Headers/MainFunctions.h" />
         <option value="$PROJECT_DIR$/Sources/MainFunctions.cpp" />
-        <option value="$PROJECT_DIR$/Headers/MenuFunctions.h" />
         <option value="$PROJECT_DIR$/Headers/ObjectsFunctions.h" />
         <option value="$PROJECT_DIR$/Sources/ObjectsFunctions.cpp" />
         <option value="$PROJECT_DIR$/Headers/GlobalVariables.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Headers/Class.h" />
-        <option value="$PROJECT_DIR$/Sources/ClassMethods.cpp" />
         <option value="$PROJECT_DIR$/Headers/ObjectFunctions.h" />
+        <option value="$PROJECT_DIR$/Headers/MenuFunctions.h" />
         <option value="$PROJECT_DIR$/Sources/MenuFunctions.cpp" />
         <option value="$PROJECT_DIR$/Sources/ObjectFunctions.cpp" />
+        <option value="$PROJECT_DIR$/Sources/ClassMethods.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -169,6 +129,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,7 +151,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,18 +200,20 @@
       <workItem from="1552489902864" duration="5434000" />
       <workItem from="1552495649812" duration="815000" />
       <workItem from="1552498979537" duration="4739000" />
-      <workItem from="1552504526134" duration="7813000" />
+      <workItem from="1552504526134" duration="7842000" />
+      <workItem from="1552577930310" duration="42000" />
+      <workItem from="1552816593991" duration="7190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41144000" />
+    <option name="totallyTimeSpent" value="48405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1788269" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18311875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -303,13 +265,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>17</line>
-          <option name="timeStamp" value="4" />
+          <line>149</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>175</line>
-          <option name="timeStamp" value="5" />
+          <line>16</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -328,13 +290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/string">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="3613" selection-start-line="3613" selection-end-line="3613" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Headers/ClassFunctions.h" />
     <entry file="file://$PROJECT_DIR$/Sources/ObjectsFunctions.cpp" />
     <entry file="file://$PROJECT_DIR$/Headers/ObjectsFunctions.h" />
@@ -345,6 +300,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include/opencl-c.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9305" selection-start-line="9305" selection-end-line="9305" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Headers/GlobalVariables.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="e#131#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -352,79 +324,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Headers/GlobalVariables.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <element signature="e#131#150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Headers/Class.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="61" column="55" lean-forward="true" selection-start-line="61" selection-start-column="55" selection-end-line="61" selection-end-column="55" />
+        <state relative-caret-position="495">
+          <caret line="120" column="35" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
           <folding>
             <element signature="e#111#129#0" expanded="true" />
             <element signature="e#173#274#1" />
-            <element signature="e#333#503#1" />
-            <element signature="e#506#620#1" />
-            <element signature="e#623#743#1" />
-            <element signature="e#746#848#1" />
-            <element signature="e#949#1149#1" />
-            <element signature="e#1152#1340#1" />
-            <element signature="e#1343#1551#1" />
-            <element signature="e#1554#1734#1" />
-            <element signature="e#1737#1925#1" />
+            <element signature="e#333#571#1" />
+            <element signature="e#574#688#1" />
+            <element signature="e#691#811#1" />
+            <element signature="e#814#916#1" />
+            <element signature="e#1017#1250#1" />
+            <element signature="e#1253#1481#1" />
+            <element signature="e#1484#1731#1" />
+            <element signature="e#1734#1948#1" />
+            <element signature="e#1951#2175#1" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/string">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2425">
-          <caret line="164" column="30" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/ClassMethods.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-          <folding>
-            <element signature="e#54#73#0" expanded="true" />
-            <element signature="e#161#1082#0" />
-            <element signature="e#1084#2142#0" />
-            <element signature="e#2144#3124#0" />
-            <element signature="e#3126#4155#0" />
-            <element signature="e#4157#5148#0" />
-            <element signature="e#5150#6165#0" />
-            <element signature="e#6167#6227#0" />
-            <element signature="e#6528#6880#0" />
-            <element signature="e#6885#7240#0" />
-            <element signature="e#7253#7309#0" />
-            <element signature="e#7583#7624#0" />
-            <element signature="e#7933#8293#0" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="1254" selection-start-line="1254" selection-end-line="1254" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Headers/MenuFunctions.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="135">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Headers/ObjectFunctions.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
             <element signature="e#131#150#0" expanded="true" />
           </folding>
@@ -433,23 +370,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/MenuFunctions.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+        <state relative-caret-position="-2503">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
           <folding>
             <element signature="e#54#73#0" expanded="true" />
-            <element signature="e#2164#3049#0" />
-            <element signature="e#3101#3679#0" />
-            <element signature="e#3681#4805#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/ObjectFunctions.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        <state relative-caret-position="1035">
+          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
           <folding>
             <element signature="e#54#73#0" expanded="true" />
+            <element signature="e#229#757#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/ClassMethods.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5670">
+          <caret line="378" column="5" selection-start-line="378" selection-start-column="5" selection-end-line="378" selection-end-column="5" />
+          <folding>
+            <element signature="e#54#73#0" expanded="true" />
+            <element signature="e#7810#8273#0" />
+            <element signature="e#8275#8797#0" />
+            <element signature="e#8799#9277#0" />
+            <element signature="e#9279#9777#0" />
+            <element signature="e#9779#10260#0" />
+            <element signature="e#10262#10743#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

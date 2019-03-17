@@ -12,7 +12,8 @@
 
 namespace List{
     void insertNode();
-    void deleteNodeByName(std::string name, std::string klass);
+    void printObjects();
+    void deleteNodeByName(std::string name);
 
 }
 

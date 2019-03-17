@@ -10,12 +10,12 @@
 
 void Utilities::CommandList(){
     std::cout<<"           * HELP - prints all the commands that you can use\n"
-          "                * CD - change directory (CD *class*)\n"
+          "                * CD - change directory (CD *level*)\n"
           "                * MO - make object for given class\n"
-          "                * DO - delete object (DO *object*) \n"
-          "                * MDO - modificate object (MDO *object*)\n"
-          "                * DIR - prints every object in given class (name)\n"
-          "                * SHOW - prints info about object (SHOW *object*)\n"
+          "                * DO - delete object \n"
+          "                * MDO - modificate object\n"
+          "                * DIR - prints every object in given class\n"
+          "                * SHOW - prints info about object (SHOW *name*)\n"
           "                * SAVE - saves every object to txt file (SAVE *textfile.txt*)\n"
           "                * READ - reads every object from txt file (READ *textfile.txt*)\n"
           "                * TREE - shows whole structure of classes\n"
@@ -53,7 +53,6 @@ bool Base::isCommandGood(std::string command, std::string atribute) {
     } else if (command == "") {
         return false;
     } else if (command == "CD" && atribute == "CD") {
-        std::cout<<"Can't execute empty command!"<<std::endl;
         return false;
     } else if (command == "CD" &&
                (atribute == "FlyingMachine" || atribute == "FloatingMachine" || atribute == "SpaceMachine" ||
@@ -104,13 +103,13 @@ bool FirstLevel::isCommandGood(std::string command, std::string atribute) {
                 atribute == "Ship" || atribute == "Rocket" || atribute =="Machine" || atribute == ".")) {
         return true;
     } else if (command == "DO") {
-        return false;
+        return true;
     } else if (command == "MO") {
         return false;
     } else if (command == "MDO") {
         return false;
     } else if (command == "DIR") {
-        return false;
+        return true;
     } else if (command == "SHOW") {
         return true;
     } else if (command == "SAVE") {
@@ -165,54 +164,31 @@ int FirstLevel::commandToInt(std::string command, std::string atribute){
 bool SecondLevel::isCommandGood(std::string command, std::string atribute) {
     if (command == "") {
         return false;
-
     } else if (command == "CD" && atribute == "CD") {
-
-        std::cout<<"Can't execute empty command!"<<std::endl;
         return false;
-
     } else if (command == "CD" &&
                (atribute == "FlyingMachine" || atribute == "SpaceMachine" || atribute == "FloatingMachine" ||
                 atribute == "WheelMachine" || atribute == ".")){
         return true;
     } else if (command == "DO") {
-
         return true;
-
     } else if (command == "MO") {
-
         return true;
-
     } else if (command == "MDO") {
-
         return true;
-
     } else if (command == "DIR") {
-
         return true;
-
     } else if (command == "SHOW") {
-
         return true;
-
     } else if (command == "SAVE") {
-
         return true;
-
     } else if (command == "READ") {
-
         return true;
-
     } else if (command == "TREE") {
-
         return true;
-
     } else if (command == "EXIT") {
-
         return true;
-
     } else if (command == "HELP") {
-
         return true;
     } else {
         return false;
@@ -225,7 +201,6 @@ int SecondLevel::commandToInt(std::string command, std::string atribute) {
         (atribute == "Machine" || atribute == "." || atribute == "FlyingMachine" || atribute == "Floating Machine" ||
          atribute == "WheelMachine" || atribute == "SpaceMachine")) {
         return 0;
-
     }else if(command == "MO") {
         return 1;
     }else if(command == "DO") {
