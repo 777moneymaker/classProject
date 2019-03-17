@@ -82,16 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/Class.h">
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/Class.hpp">
 			<Option target="Projekt_PPO"/>
 		</Unit>
-		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/GlobalVariables.h">
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/GlobalVariables.hpp">
 			<Option target="Projekt_PPO"/>
 		</Unit>
-		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/MenuFunctions.h">
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/MenuFunctions.hpp">
 			<Option target="Projekt_PPO"/>
 		</Unit>
-		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/ObjectFunctions.h">
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/ObjectFunctions.hpp">
 			<Option target="Projekt_PPO"/>
 		</Unit>
 		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/ClassMethods.cpp">

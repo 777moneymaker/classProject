@@ -4,10 +4,10 @@
 
 #include <iostream>
 #include <string>
-#include "Headers/Class.h"
-#include "Headers/MenuFunctions.h"
-#include "Headers/GlobalVariables.h"
-#include "Headers/ObjectFunctions.h"
+#include "Headers/Class.hpp"
+#include "Headers/MenuFunctions.hpp"
+#include "Headers/GlobalVariables.hpp"
+#include "Headers/ObjectFunctions.hpp"
 
 void List::insertNode(std::string name) {
     if (level == "Jet") {

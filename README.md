@@ -6,5 +6,3 @@ Zero knowledge program that involves some object programming skills and imitates
 
 * **Milosz Chodkowski** [777moneymaker](https://github.com/777moneymaker) PUT Poznan University of Technology
 
-
-

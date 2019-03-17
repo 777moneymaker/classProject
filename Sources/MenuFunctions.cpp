@@ -3,9 +3,9 @@
 //
 
 #include <iostream>
-#include "Headers/Class.h"
-#include "Headers/MenuFunctions.h"
-#include "Headers/GlobalVariables.h"
+#include "Headers/Class.hpp"
+#include "Headers/MenuFunctions.hpp"
+#include "Headers/GlobalVariables.hpp"
 
 
 void Utilities::CommandList(){

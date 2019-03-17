@@ -6,7 +6,7 @@
 #define PROJEKT_PPO_GLOBALVARIABLES_H
 
 #include <iostream>
-#include "Headers/Class.h"
+#include "Headers/Class.hpp"
 
 extern std::string level;
 

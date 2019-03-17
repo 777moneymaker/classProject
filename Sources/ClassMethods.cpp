@@ -3,8 +3,8 @@
 //
 
 #include <iostream>
-#include <Headers/GlobalVariables.h>
-#include "Headers/Class.h"
+#include <Headers/GlobalVariables.hpp>
+#include "Headers/Class.hpp"
 
 void WheelMachine::insertNewVehicle(std::string name) {
     WheelMachine *newMachine = new WheelMachine;
