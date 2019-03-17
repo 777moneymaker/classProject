@@ -18,13 +18,13 @@ Rocket *RocketHead = NULL;
 WheelMachine *MachineHead = NULL;
 
 int main() {
-    std::string input;
+    Utilities::HelloMsg();
     Utilities::MenuGenerator();
-
-    std::cout << "Type *START* to start the program" << std::endl;
+    std::cout << "Type \"START\" to start the program" << std::endl;
     std::cout << "~ ";
     std::cin.clear();
 
+    std::string input;
     std::getline(std::cin, input);
 
     int pos = input.find_first_of(" ");

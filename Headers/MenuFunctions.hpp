@@ -11,6 +11,7 @@ namespace Utilities{
     void Tree();          // prints class hierarchy
     void MenuGenerator(); // prints info about commands
     void pathName();      // shows path /.../.../:~ etc.
+    void HelloMsg();
 }
 
 namespace Base {

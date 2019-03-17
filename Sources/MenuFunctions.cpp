@@ -9,7 +9,7 @@
 
 
 void Utilities::CommandList(){
-    std::cout<<"           * HELP - prints all the commands that you can use\n"
+    std::cout<<"           \t\t* HELP - prints all the commands that you can use\n"
           "                * CD - change directory (CD *level*)\n"
           "                * MO - make object for given class (MO *name*)\n"
           "                * DO - delete object \n"
@@ -65,6 +65,11 @@ void Utilities::pathName(){
                 std::cout << "Enter command" << std::endl;
                 std::cout << "Machine/.../" + level + ":~ ";
     }
+}
+
+void Utilities::HelloMsg() {
+    std::cout<<"Hi! This program allows you to have fun with creating, editing, deleting objects.\n"
+               "You can save them to textfile or read from it anytime. I hope you will enjoy it :)"<<std::endl;
 }
 
 bool Base::isCommandGood(std::string command, std::string atribute) {
