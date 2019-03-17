@@ -41,12 +41,8 @@ void WheelMachine::insertNewVehicle(std::string name) {
 
 void Jet::insertNewJet(std::string name) {
     Jet *newJet = new Jet;
-
-    float power;
-    std::string landingGear;
-    std::string colour;
-    std::string weaponType;
-    float maxSpeed;
+    float power, maxSpeed;
+    std::string landingGear, colour, weaponType;
 
     std::cout << "Set parameters for new Jet:" << std::endl;
     std::cout <<"Set power: ";
@@ -85,11 +81,8 @@ void Jet::insertNewJet(std::string name) {
 
 void Helicopter::insertNewHeli(std::string name) {
     Helicopter *newHeli = new Helicopter;
-
-    float power;
-    std::string landingGear;
-    std::string heliType;
-    float maxRPM;
+    float power, maxRPM;
+    std::string landingGear, heliType;
 
     std::cout << "Set parameters for new Helicopter:" << std::endl;
     std::cout <<"Set power: ";
@@ -125,11 +118,8 @@ void Helicopter::insertNewHeli(std::string name) {
 
 void Submarine::insertNewSubmarine(std::string name) {
     Submarine *newSub = new Submarine;
-
-    float power;
-    std::string powerSupplyType;
-    std::string typeOfPropulsion;
-    float maxSpeed;
+    float power, maxSpeed;
+    std::string powerSupplyType, typeOfPropulsion;
 
     std::cout << "Set parameters for new Submarine:" << std::endl;
     std::cout <<"Set power: ";
@@ -164,11 +154,9 @@ void Submarine::insertNewSubmarine(std::string name) {
 
 void Ship::insertNewShip(std::string name) {
     Ship *newShip = new Ship;
-
     float power;
-    std::string powerSupplyType;
     int numOfSeats;
-    std::string shipType;
+    std::string powerSupplyType, shipType;
 
     std::cout << "Set parameters for new Ship" << std::endl;
     std::cout <<"Set power: ";
@@ -203,11 +191,8 @@ void Ship::insertNewShip(std::string name) {
 
 void Rocket::insertNewRocket(std::string name) {
     Rocket *newRocket = new Rocket;
-
-    float power;
-    float gasTankVolume;
+    float power, gasTankVolume, maxRange;
     std::string missionType;
-    float maxRange;
 
     std::cout << "Set parameters for new Rocket" << std::endl;
     std::cout <<"Set power: ";
@@ -249,7 +234,7 @@ void WheelMachine::deleteMachine(WheelMachine *del) {
         return;
     }
     if(del->next != NULL){
-        WheelMachine *temp;
+        WheelMachine *temp = MachineHead;
         while(temp->next != del)
             temp=temp->next;
         temp->next=temp->next->next;

@@ -10,21 +10,20 @@
 #include "Headers/ObjectFunctions.hpp"
 
 void List::insertNode(std::string name) {
-    if (level == "Jet") {
+    if (level == "Jet")
         JetHead->insertNewJet(name);
-    } else if (level == "Helicopter") {
+    else if (level == "Helicopter")
         HeliHead->insertNewHeli(name);
-    } else if (level == "Submarine") {
+    else if (level == "Submarine")
         SubHead->insertNewSubmarine(name);
-    } else if (level == "Ship") {
+    else if (level == "Ship")
         ShipHead->insertNewShip(name);
-    } else if (level == "Rocket") {
+    else if (level == "Rocket")
         RocketHead->insertNewRocket(name);
-    } else if (level == "WheelMachine"){
+    else if (level == "WheelMachine")
         MachineHead->insertNewVehicle(name);
-    }else{
+    else
         std::cout<<"Wrong level!"<<std::endl;
-    }
 }
 
 void List::deleteNodeByName(std::string name){
@@ -88,9 +87,8 @@ void List::deleteNodeByName(std::string name){
             temp = temp->next;
         }
         return;
-    }else{
+    }else
         std::cout<<"Couldn't find object with that name!"<<std::endl;
-    }
 }
 
 void List::printObjects() {

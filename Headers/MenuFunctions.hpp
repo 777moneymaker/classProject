@@ -7,24 +7,24 @@
 
 
 namespace Utilities{
-    void CommandList();
-    void Tree();
+    void CommandList();   // prints list of  available Commands
+    void Tree();          // prints class hierarchy
     void MenuGenerator(); // prints info about commands
-    void pathName();
+    void pathName();      // shows path /.../.../:~ etc.
 }
 
 namespace Base {
-    bool isCommandGood(std::string command, std::string atribute);
-    int commandToInt(std::string command, std::string atribute);
-}// returns number when given string is a command
+    bool isCommandGood(std::string command, std::string atribute);     // checks for valid command at base level
+    int commandToInt(std::string command, std::string atribute);       // used to transform command to int in switch-case
+}
 
 namespace FirstLevel {
-    bool isCommandGood(std::string command, std::string atribute);
-    int commandToInt(std::string command, std::string atribute);
+    bool isCommandGood(std::string command, std::string atribute);     // checks for valid command at First level
+    int commandToInt(std::string command, std::string atribute);       // used to transform command to int in switch-case
 }
 namespace SecondLevel{
-    bool isCommandGood(std::string command, std::string atribute);
-    int commandToInt(std::string command, std::string atribute);
+    bool isCommandGood(std::string command, std::string atribute);       // checks for valid command af Second Level
+    int commandToInt(std::string command, std::string atribute);         // used to transform command to int in switch-case
 }
 
 #endif //PROJEKT_PPO_MAINFUNCTIONS_H

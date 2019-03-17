@@ -11,9 +11,9 @@
 
 std::string level = "Machine";
 Jet *JetHead = NULL;
-Helicopter *HeliHead = NULL;
-Submarine *SubHead = NULL;
-Ship *ShipHead = NULL;
+Helicopter *HeliHead = NULL;      //
+Submarine *SubHead = NULL;        // every class head
+Ship *ShipHead = NULL;            //
 Rocket *RocketHead = NULL;
 WheelMachine *MachineHead = NULL;
 
@@ -26,6 +26,7 @@ int main() {
     std::cin.clear();
 
     std::getline(std::cin, input);
+
     int pos = input.find_first_of(" ");
     std::string atribute = input.substr(pos + 1), command = input.substr(0, pos);
 
@@ -37,7 +38,6 @@ int main() {
         atribute = input.substr(pos + 1);
         command = input.substr(0, pos);
     }
-
     while (true) {
         Utilities::pathName();
 
@@ -46,14 +46,14 @@ int main() {
         atribute = input.substr(pos + 1);
         command = input.substr(0, pos);
 
-        while (Base::isCommandGood(command, atribute) ||
-        FirstLevel::isCommandGood(command, atribute) ||
-        SecondLevel::isCommandGood(command, atribute)) {
+        while (Base::isCommandGood(command, atribute) || //checks if command is valid at base level
+        FirstLevel::isCommandGood(command, atribute) || //checks if command is valid at first level
+        SecondLevel::isCommandGood(command, atribute)) { //checks if command is valid at second level
 
-            if (level == "Machine") {                                //********************* base level
+            if (level == "Machine") {   // base level
                 switch (Base::commandToInt(command, atribute)) {
                     case 0:
-                        if (atribute == ".")
+                        if (atribute == ".")   // we do not want level == "."
                             level = "Machine";
                         else
                             level = atribute;
@@ -87,18 +87,18 @@ int main() {
             }
 
             if (level == "FlyingMachine" ||
-            level == "FloatingMachine" ||
-            level == "WheelMachine" ||
-            level == "SpaceMachine"){    // ********************** 1st level
+                level == "FloatingMachine" ||       // ********************** 1st level
+                level == "WheelMachine" ||
+                level == "SpaceMachine"){
                 switch (FirstLevel::commandToInt(command, atribute)) {
-                    case 0:    // switches to another class
+                    case 0:
                         if(atribute==".")
                             level = "Machine";
                         else
                             level = atribute;
                         break;
                     case 1:
-                        List::insertNode(atribute);  // insertion depends on level status
+                        List::insertNode(atribute);
                         break;
                     case 2:
                         List::deleteNodeByName(atribute);
@@ -125,6 +125,7 @@ int main() {
                         Utilities::CommandList();
                         break;
                     case 10:
+                        std::cout << "Goodbye!" << std::endl;
                         exit(0);
                     default:
                         std::cout<<"Couldn't Find!"<<std::endl;
@@ -134,10 +135,10 @@ int main() {
             }
 
             if (level == "Jet" ||
-            level == " Helicopter " ||
-            level == "Submarine" ||
-            level == " Ship " ||
-            level == "Rocket") {    // ***************** 2nd level
+                level == " Helicopter " ||
+                level == "Submarine" ||
+                level == " Ship " ||
+                level == "Rocket") {    // ***************** 2nd level
                 switch( SecondLevel::commandToInt(command, atribute) ){
                     case 0:
                         if(atribute == "." ){
@@ -174,6 +175,7 @@ int main() {
                         Utilities::CommandList();
                         break;
                     case 10:
+                        std::cout << "Goodbye!" << std::endl;
                         exit(0);
                     default:
                         std::cout<<"Couldn't find that!"<<std::endl;

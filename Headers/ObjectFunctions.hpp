@@ -11,10 +11,9 @@
 #include "Headers/GlobalVariables.hpp"
 
 namespace List{
-    void insertNode(std::string name);
-    void printObjects();
+    void insertNode(std::string name);  // insertion depends on actual level
+    void printObjects();        // prints every object in actual level
     void deleteNodeByName(std::string name);
-
 }
 
 #endif //PROJEKT_PPO_OBJECTFUNCTIONS_H
