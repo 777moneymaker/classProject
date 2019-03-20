@@ -48,10 +48,9 @@ void Utilities::MenuGenerator() {   // prints info about commands
 }
 
 void Utilities::pathName(){
-    if(level == "Machine"){
-        std::cout << "Enter command" << std::endl;
-        std::cout << "/" + level + ":~ ";
-    }else if(level =="FloatingMachine" ||
+    if(level == "Machine")
+        std::cout << "Enter command" << std::endl<< "/" + level + ":~ ";
+    else if(level =="FloatingMachine" ||
              level == "FlyingMachine" ||
              level == "SpaceMachine" ||
              level == "WheelMachine" ){
@@ -164,7 +163,6 @@ bool FirstLevel::isCommandGood(std::string command, std::string atribute) {
 }
 
 int FirstLevel::commandToInt(std::string command, std::string atribute){
-
     if(level == "FlyingMachine" && command=="CD" && (atribute == "Machine" ||
                                                     atribute == "." ||
                                                     atribute =="Jet" ||
@@ -244,7 +242,6 @@ bool SecondLevel::isCommandGood(std::string command, std::string atribute) {
 }
 
 int SecondLevel::commandToInt(std::string command, std::string atribute) {
-
     if (command == "CD" && (atribute == "Machine" ||
                             atribute == "." ||
                             atribute == "FlyingMachine" ||

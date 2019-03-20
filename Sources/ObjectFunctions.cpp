@@ -107,3 +107,37 @@ void List::printObjects() {
     else
         std::cout<<"Wrong level!"<<std::endl;
 }
+
+void List::printObjectInfo(std::string name) {
+    if(level == "WheelMachine")
+        MachineHead->printObjectinfo(name);
+    else if(level == "Jet")
+        JetHead->printObjectinfo(name);
+    else if(level == "Helicopter")
+        HeliHead->printObjectinfo(name);
+    else if(level == "Submarine")
+        SubHead->printObjectinfo(name);
+    else if(level == "Ship")
+        ShipHead->printObjectinfo(name);
+    else if(level == "Rocket")
+        RocketHead->printObjectinfo(name);
+    else
+        std::cout<<"Wrong level!"<<std::endl;
+}
+
+void List::modObject(std::string name){
+    if(level == "WheelMachine")
+        MachineHead->modObject(name);
+    else if(level == "Jet")
+        JetHead->modObject(name);
+    else if(level == "Helicopter")
+        HeliHead->modObject(name);
+    else if(level == "Submarine")
+        SubHead->modObject(name);
+    else if(level == "Ship")
+        ShipHead->modObject(name);
+    else if(level == "Rocket")
+        RocketHead->modObject(name);
+    else
+        std::cout<<"Wrong level!"<<std::endl;
+}

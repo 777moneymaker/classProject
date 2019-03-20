@@ -27,6 +27,8 @@ public:
     void insertNewVehicle(std::string name);
     void deleteMachine(WheelMachine *del);
     void printObjects();
+    void printObjectinfo(std:: string name);
+    void modObject(std::string name);
 };
 
 class FlyingMachine : public Machine {
@@ -61,6 +63,8 @@ public:
     void insertNewJet(std::string name);
     void deleteJet(Jet *del);
     void printObjects();
+    void printObjectinfo(std:: string name);
+    void modObject(std::string name);
 };
 
 class Helicopter : public FlyingMachine {
@@ -73,6 +77,8 @@ public:
     void insertNewHeli(std::string name);
     void deleteHeli(Helicopter *del);
     void printObjects();
+    void printObjectinfo(std:: string name);
+    void modObject(std::string name);
 };
 
 class Submarine : public FloatingMachine {
@@ -85,6 +91,8 @@ public:
     void insertNewSubmarine(std::string name);
     void deleteSubmarine(Submarine *del);
     void printObjects();
+    void printObjectinfo(std:: string name);
+    void modObject(std::string name);
 };
 
 class Ship : public FloatingMachine {
@@ -97,6 +105,8 @@ public:
     void insertNewShip(std::string name);
     void deleteShip(Ship *del);
     void printObjects();
+    void printObjectinfo(std:: string name);
+    void modObject(std::string name);
 };
 
 class Rocket : public SpaceMachine {
@@ -109,6 +119,8 @@ public:
     void insertNewRocket(std::string name);
     void deleteRocket(Rocket *del);
     void printObjects();
+    void printObjectinfo(std:: string name);
+    void modObject(std::string name);
 };
 
 #endif //PROJEKT_PPO_CLASS_H

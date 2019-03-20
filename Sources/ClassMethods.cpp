@@ -29,6 +29,7 @@ void WheelMachine::insertNewVehicle(std::string name) {
     newMachine->numOfWheels = numOfWheels;
     newMachine->engineType = engineType;
     newMachine->power = power;
+    newMachine->next = NULL;
 
     if(MachineHead == NULL) {
         MachineHead = newMachine;
@@ -421,6 +422,296 @@ void Rocket::printObjects() {
         std::cout <<"Mission type "<<temp->missionType<<std::endl;
         std::cout <<"Max range: "<<temp->maxRange<<std::endl;
         std::cout<<std::endl;
+        temp=temp->next;
+    }
+}
+
+void WheelMachine::printObjectinfo(std::string name) {
+    WheelMachine *temp = MachineHead;
+    while(temp){
+        if(temp->name == name){
+            std::cout<<std::endl;
+            std::cout <<"Name: "<< temp->name<<std::endl;
+            std::cout <<"Num of wheels: "<<temp->numOfWheels<<std::endl;
+            std::cout <<"Engine type: "<<temp->engineType<<std::endl;
+            std::cout <<"Power: "<<temp->power<<std::endl;
+            std::cout<<std::endl;
+        }
+        temp=temp->next;
+    }
+}
+
+void Jet::printObjectinfo(std::string name) {
+    Jet *temp = JetHead;
+    while(temp){
+        if(temp->name==name){
+            std::cout<<std::endl;
+            std::cout <<"Name: "<<temp->name<<std::endl;
+            std::cout <<"Power: "<<temp->power<<std::endl;
+            std::cout <<"Landing gear: "<<temp->landingGear<<std::endl;
+            std::cout <<"Colour: "<<temp->colour<<std::endl;
+            std::cout <<"Weapon type: "<<temp->weaponType<<std::endl;
+            std::cout <<"Max speed: "<<temp->maxSpeed<<std::endl;
+            std::cout<<std::endl;
+        }
+        temp=temp->next;
+    }
+}
+
+void Helicopter::printObjectinfo(std::string name) {
+    Helicopter *temp = HeliHead;
+    while(temp){
+        if(temp->name==name){
+            std::cout<<std::endl;
+            std::cout <<"Name: "<<temp->name<<std::endl;
+            std::cout <<"Power: "<<temp->power<<std::endl;
+            std::cout <<"Landing gear: "<<temp->landingGear<<std::endl;
+            std::cout <<"Helicopter type: "<<temp->heliType<<std::endl;
+            std::cout <<"Max RPM: "<<temp->maxRPM<<std::endl;
+            std::cout<<std::endl;
+        }
+        temp=temp->next;
+    }
+}
+
+void Submarine::printObjectinfo(std::string name) {
+    Submarine *temp = SubHead;
+    while(temp){
+        if(temp->name == name){
+            std::cout<<std::endl;
+            std::cout <<"Name: "<<temp->name<<std::endl;
+            std::cout <<"Power: "<<temp->power<<std::endl;
+            std::cout <<"Power supply type: "<<temp->powerSupplyType<<std::endl;
+            std::cout <<"Type of propulsion: "<<temp->typeOfPropulsion<<std::endl;
+            std::cout<<"Max speed: "<<temp->maxSpeed<<std::endl;
+            std::cout<<std::endl;
+        }
+        temp=temp->next;
+    }
+}
+
+void Ship::printObjectinfo(std::string name) {
+    Ship *temp = ShipHead;
+    while(temp){
+        if(temp->name == name){
+            std::cout<<std::endl;
+            std::cout <<"Name: "<<temp->name<<std::endl;
+            std::cout <<"Power: "<<temp->power<<std::endl;
+            std::cout <<"Power supply type: "<<temp->powerSupplyType<<std::endl;
+            std::cout <<"Number of seats: "<<temp->numOfSeats<<std::endl;
+            std::cout <<"Ship type: "<<temp->shipType<<std::endl;
+            std::cout<<std::endl;
+        }
+        temp=temp->next;
+    }
+}
+
+void Rocket::printObjectinfo(std::string name) {
+    Rocket *temp = RocketHead;
+    while(temp){
+        if(temp->name == name) {
+            std::cout << std::endl;
+            std::cout << "Name: " << temp->name << std::endl;
+            std::cout << "Power: " << temp->power << std::endl;
+            std::cout << "Gas tank volume: " << temp->gasTankVolume << std::endl;
+            std::cout << "Mission type " << temp->missionType << std::endl;
+            std::cout << "Max range: " << temp->maxRange << std::endl;
+            std::cout << std::endl;
+        }
+        temp=temp->next;
+    }
+}
+
+void WheelMachine::modObject(std::string name) {
+    WheelMachine *temp = MachineHead;
+    while(temp){
+        if(temp->name == name){
+            int numOfWheels;
+            std::string engineType;
+            float power;
+
+            std::cout <<"Set num of wheels: ";
+            std::cin>>numOfWheels;
+
+            std::cout <<"Set engine type: ";
+            std::cin>>engineType;
+
+            std::cout <<"Set power: ";
+            std::cin>>power;
+
+            std::cin.ignore();
+
+            temp->name = name;
+            temp->numOfWheels = numOfWheels;
+            temp->engineType = engineType;
+            temp->power = power;
+            std::cout<<std::endl<<"Modification Completed!"<<std::endl;
+        }
+        temp=temp->next;
+    }
+}
+
+void Jet::modObject(std::string name) {
+    Jet *temp = JetHead;
+    while(temp){
+        if(temp -> name == name){
+            float power, maxSpeed;
+            std::string landingGear, colour, weaponType;
+
+            std::cout <<"Set power: ";
+            std::cin>>power;
+
+            std::cout <<"Set landing gear: ";
+            std::cin >> landingGear;
+
+            std::cout <<"Set colour: ";
+            std::cin >> colour;
+
+            std::cout <<"Set weapon type: ";
+            std::cin >> weaponType;
+
+            std::cout <<"Set max speed: ";
+            std::cin >> maxSpeed;
+
+            std::cin.ignore();
+
+            temp->name = name;
+            temp->power = power;
+            temp->landingGear = landingGear;
+            temp->colour = colour;
+            temp->weaponType = weaponType;
+            temp->maxSpeed = maxSpeed;
+            std::cout<<std::endl<<"Modification Completed!"<<std::endl;
+        }
+        temp = temp->next;
+    }
+}
+
+void Helicopter::modObject(std::string name) {
+    Helicopter *temp = HeliHead;
+    while(temp){
+        if (temp->name == name){
+            float power, maxRPM;
+            std::string landingGear, heliType;
+
+            std::cout <<"Set power: ";
+            std::cin>> power;
+
+            std::cout <<"Set landing gear: ";
+            std::cin>> landingGear;
+
+            std::cout <<"Set helicopter type: ";
+            std::cin>> heliType;
+
+            std::cout <<"Set max RPM: ";
+            std::cin>> maxRPM;
+
+            std::cin.ignore();
+
+            temp->power = power;
+            temp->name = name;
+            temp->landingGear = landingGear;
+            temp->heliType = heliType;
+            temp->maxRPM = maxRPM;
+            std::cout<<std::endl<<"Modification Completed!"<<std::endl;
+        }
+        temp=temp->next;
+    }
+}
+
+void Submarine::modObject(std::string name) {
+    Submarine *temp = SubHead;
+    while(temp){
+        if(temp->name == name){
+            float power, maxSpeed;
+            std::string powerSupplyType, typeOfPropulsion;
+
+            std::cout <<"Set power: ";
+            std::cin>> power;
+
+            std::cout <<"Set power supply type: ";
+            std::cin>> powerSupplyType;
+
+            std::cout <<"Set type of propulsion: ";
+            std::cin>> typeOfPropulsion;
+
+            std::cout <<"Set max speed: ";
+            std::cin>> maxSpeed;
+
+            std::cin.ignore();
+
+            temp->power = power;
+            temp->name = name;
+            temp->powerSupplyType = powerSupplyType;
+            temp->typeOfPropulsion = typeOfPropulsion;
+            temp->maxSpeed = maxSpeed;
+            std::cout<<std::endl<<"Modification Completed!"<<std::endl;
+        }
+        temp=temp->next;
+    }
+}
+
+void Ship::modObject(std::string name) {
+    Ship *temp = ShipHead;
+    while(temp){
+        if(temp->name == name){
+            float power;
+            int numOfSeats;
+            std::string powerSupplyType, shipType;
+
+            std::cout <<"Set power: ";
+            std::cin>> power;
+
+            std::cout <<"Set power supply type: ";
+            std::cin>> powerSupplyType;
+
+            std::cout <<"Set number of seats: ";
+            std::cin>> numOfSeats;
+
+            std::cout <<"Set ship type: ";
+            std::cin>> shipType;
+
+            std::cin.ignore();
+
+            temp->power = power;
+            temp->name = name;
+            temp->powerSupplyType = powerSupplyType;
+            temp->numOfSeats = numOfSeats;
+            temp->shipType = shipType;
+            std::cout<<std::endl<<"Modification Completed!"<<std::endl;
+        }
+        temp=temp->next;
+    }
+}
+
+void Rocket::modObject(std::string name) {
+    Rocket *temp = RocketHead;
+    while(temp){
+        if(temp->name == name){
+            float power, gasTankVolume, maxRange;
+            std::string missionType;
+
+            std::cout <<"Set power: ";
+            std::cin>> power;
+
+            std::cout <<"Set gas tank volume: ";
+            std::cin>> gasTankVolume;
+
+            std::cout <<"Set mission type ";
+            std::cin>> missionType;
+
+            std::cout <<"Set max range: ";
+            std::cin>> maxRange;
+
+            std::cin.ignore();
+
+            temp->power=power;
+            temp->name=name;
+            temp->gasTankVolume=gasTankVolume;
+            temp->missionType = missionType;
+            temp->maxRange = maxRange;
+            std::cout<<std::endl<<"Modification Completed!"<<std::endl;
+        }
         temp=temp->next;
     }
 }

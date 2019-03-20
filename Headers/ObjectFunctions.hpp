@@ -13,7 +13,9 @@
 namespace List{
     void insertNode(std::string name);  // insertion depends on actual level
     void printObjects();        // prints every object in actual level
-    void deleteNodeByName(std::string name);
+    void deleteNodeByName(std::string name); // deletes node by name in actual level
+    void printObjectInfo(std::string name); // prints objects by given name
+    void modObject(std::string name); // modificates object by given name
 }
 
 #endif //PROJEKT_PPO_OBJECTFUNCTIONS_H

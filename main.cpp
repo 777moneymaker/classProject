@@ -20,8 +20,7 @@ WheelMachine *MachineHead = NULL;
 int main() {
     Utilities::HelloMsg();
     Utilities::MenuGenerator();
-    std::cout << "Type \"START\" to start the program" << std::endl;
-    std::cout << "~ ";
+    std::cout << "Type \"START\" to start the program" << std::endl<<"~ ";
     std::cin.clear();
 
     std::string input;
@@ -47,8 +46,8 @@ int main() {
         command = input.substr(0, pos);
 
         while (Base::isCommandGood(command, atribute) || //checks if command is valid at base level
-        FirstLevel::isCommandGood(command, atribute) || //checks if command is valid at first level
-        SecondLevel::isCommandGood(command, atribute)) { //checks if command is valid at second level
+              FirstLevel::isCommandGood(command, atribute) || //checks if command is valid at first level
+              SecondLevel::isCommandGood(command, atribute)) { //checks if command is valid at second level
 
             if (level == "Machine") {   // base level
                 switch (Base::commandToInt(command, atribute)) {
@@ -62,12 +61,14 @@ int main() {
                         Utilities::CommandList();
                         break;
                     case 2:
+                        // SAVE
                         if(atribute == "SAVE"){
                             std::cout<<"No file to save!"<<std::endl;
                             break;
                         }
                         break;
                     case 3:
+                        // READ
                         if(atribute=="READ"){
                             std::cout<<"No file to read from!"<<std::endl;
                             break;
@@ -104,13 +105,13 @@ int main() {
                         List::deleteNodeByName(atribute);
                         break;
                     case 3:
-                        // object modification
+                        List::modObject(atribute);
                         break;
                     case 4:
                         List::printObjects();
                         break;
                     case 5:
-                        // SHOW - info about object
+                        List::printObjectInfo(atribute);
                         break;
                     case 6:
                         // SAVE
@@ -154,13 +155,13 @@ int main() {
                         List::deleteNodeByName(atribute);
                         break;
                     case 3:
-                        // Modificate object
+                        List::modObject(atribute);
                         break;
                     case 4:
                         List::printObjects();
                         break;
                     case 5:
-                        //SHOW
+                        List::printObjectInfo(atribute);
                         break;
                     case 6:
                         //SAVE
@@ -182,7 +183,6 @@ int main() {
                         break;
                 }
                 break;
-
             }
         }
     }
