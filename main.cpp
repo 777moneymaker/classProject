@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "Headers/Class.hpp"
 #include "Headers/MenuFunctions.hpp"
 #include "Headers/GlobalVariables.hpp"
@@ -61,18 +62,10 @@ int main() {
                         Utilities::CommandList();
                         break;
                     case 2:
-                        // SAVE
-                        if(atribute == "SAVE"){
-                            std::cout<<"No file to save!"<<std::endl;
-                            break;
-                        }
+                        List::saveObjects();
                         break;
                     case 3:
-                        // READ
-                        if(atribute=="READ"){
-                            std::cout<<"No file to read from!"<<std::endl;
-                            break;
-                        }
+                        List::readObjects();
                         break;
                     case 4:
                         Utilities::Tree();
@@ -80,6 +73,9 @@ int main() {
                     case 5:
                         std::cout << "Goodbye!" << std::endl;
                         exit(0);
+                    case 6:
+                        List::printObjects();
+                        break;
                     default:
                         std::cout << "Can't find that!" << std::endl;
                         break;
@@ -114,10 +110,10 @@ int main() {
                         List::printObjectInfo(atribute);
                         break;
                     case 6:
-                        // SAVE
+                        List::saveObjects();
                         break;
                     case 7:
-                        // READ
+                        List::readObjects();
                         break;
                     case 8:
                         Utilities::Tree();
@@ -164,10 +160,10 @@ int main() {
                         List::printObjectInfo(atribute);
                         break;
                     case 6:
-                        //SAVE
+                        List::saveObjects();
                         break;
                     case 7:
-                        //READ
+                        List::readObjects();
                         break;
                     case 8:
                         Utilities::Tree();

@@ -6,6 +6,7 @@
 #define PROJEKT_PPO_CLASS_H
 
 #include<iostream>
+#include <fstream>
 #include "MenuFunctions.hpp"
 
 class Machine {       // Base Class
@@ -29,6 +30,8 @@ public:
     void printObjects();
     void printObjectinfo(std:: string name);
     void modObject(std::string name);
+    void saveObjects();
+    void readObjects();
 };
 
 class FlyingMachine : public Machine {
@@ -65,6 +68,8 @@ public:
     void printObjects();
     void printObjectinfo(std:: string name);
     void modObject(std::string name);
+    void saveObjects();
+    void readObjects();
 };
 
 class Helicopter : public FlyingMachine {
@@ -79,6 +84,8 @@ public:
     void printObjects();
     void printObjectinfo(std:: string name);
     void modObject(std::string name);
+    void saveObjects();
+    void readObjects();
 };
 
 class Submarine : public FloatingMachine {
@@ -93,6 +100,8 @@ public:
     void printObjects();
     void printObjectinfo(std:: string name);
     void modObject(std::string name);
+    void saveObjects();
+    void readObjects();
 };
 
 class Ship : public FloatingMachine {
@@ -107,6 +116,8 @@ public:
     void printObjects();
     void printObjectinfo(std:: string name);
     void modObject(std::string name);
+    void saveObjects();
+    void readObjects();
 };
 
 class Rocket : public SpaceMachine {
@@ -121,6 +132,8 @@ public:
     void printObjects();
     void printObjectinfo(std:: string name);
     void modObject(std::string name);
+    void saveObjects();
+    void readObjects();
 };
 
 #endif //PROJEKT_PPO_CLASS_H

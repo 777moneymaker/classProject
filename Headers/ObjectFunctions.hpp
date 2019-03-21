@@ -6,6 +6,7 @@
 #define PROJEKT_PPO_OBJECTFUNCTIONS_H
 
 #include <iostream>
+#include <fstream>
 #include "Headers/Class.hpp"
 #include "Headers/MenuFunctions.hpp"
 #include "Headers/GlobalVariables.hpp"
@@ -16,6 +17,8 @@ namespace List{
     void deleteNodeByName(std::string name); // deletes node by name in actual level
     void printObjectInfo(std::string name); // prints objects by given name
     void modObject(std::string name); // modificates object by given name
+    void saveObjects(); // saves objects at current level. Clears file before saving
+    void readObjects(); // reads objects at current level. Doesn't clear existing objects
 }
 
 #endif //PROJEKT_PPO_OBJECTFUNCTIONS_H

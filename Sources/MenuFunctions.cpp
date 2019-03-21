@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <fstream>
 #include "Headers/Class.hpp"
 #include "Headers/MenuFunctions.hpp"
 #include "Headers/GlobalVariables.hpp"
@@ -12,15 +13,15 @@ void Utilities::CommandList(){
     std::cout<<"           \t\t* HELP - prints all the commands that you can use\n"
           "                * CD - change directory (CD *level*)\n"
           "                * MO - make object for given class (MO *name*)\n"
-          "                * DO - delete object \n"
-          "                * MDO - modificate object\n"
+          "                * DO - delete object (DO *name)\n"
+          "                * MDO - modificate object (MDO *name*)\n"
           "                * DIR - prints every object in given class\n"
           "                * SHOW - prints info about object (SHOW *name*)\n"
           "                * SAVE - saves every object to txt file (SAVE *textfile.txt*)\n"
           "                * READ - reads every object from txt file (READ *textfile.txt*)\n"
           "                * TREE - shows whole structure of classes\n"
           "                * EXIT - quit the program "<<std::endl;
-}
+} // displays
 
 void Utilities::Tree(){
     std::cout<<"              Machine \n"
@@ -95,6 +96,8 @@ bool Base::isCommandGood(std::string command, std::string atribute) {
         return true;
     else if(command =="HELP")
         return true;
+    else if(command == "DIR")
+        return true;
     else
         return false;
 }
@@ -117,8 +120,10 @@ int Base::commandToInt(std::string command, std::string atribute) {
         return 4;
     else if(command == "EXIT" )
         return 5;
-    else
+    else if(command == "DIR")
         return 6;
+    else
+        return 7;
 }
 
 bool FirstLevel::isCommandGood(std::string command, std::string atribute) {

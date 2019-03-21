@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "Headers/Class.hpp"
 #include "Headers/MenuFunctions.hpp"
 #include "Headers/GlobalVariables.hpp"
@@ -92,9 +93,25 @@ void List::deleteNodeByName(std::string name){
 }
 
 void List::printObjects() {
-    if(level == "WheelMachine")
+    if(level == "Machine"){
+     std::cout<<"All objects: "<<std::endl;
+     MachineHead->printObjects();
+     JetHead->printObjects();
+     HeliHead->printObjects();
+     SubHead->printObjects();
+     ShipHead->printObjects();
+     RocketHead->printObjects();
+    }else if(level == "WheelMachine")
         MachineHead->printObjects();
-    else if(level == "Jet")
+    else if(level =="FloatingMachine") {
+        ShipHead->printObjects();
+        SubHead->printObjects();
+    }else if(level == "FlyingMachine") {
+        JetHead->printObjects();
+        HeliHead->printObjects();
+    }else if(level == "SpaceMachine"){
+        RocketHead->printObjects();
+    }else if(level == "Jet")
         JetHead->printObjects();
     else if(level == "Helicopter")
         HeliHead->printObjects();
@@ -109,18 +126,18 @@ void List::printObjects() {
 }
 
 void List::printObjectInfo(std::string name) {
-    if(level == "WheelMachine")
-        MachineHead->printObjectinfo(name);
-    else if(level == "Jet")
+    if (level == "Jet")
         JetHead->printObjectinfo(name);
-    else if(level == "Helicopter")
+    else if (level == "Helicopter")
         HeliHead->printObjectinfo(name);
-    else if(level == "Submarine")
+    else if (level == "Submarine")
         SubHead->printObjectinfo(name);
-    else if(level == "Ship")
+    else if (level == "Ship")
         ShipHead->printObjectinfo(name);
-    else if(level == "Rocket")
+    else if (level == "Rocket")
         RocketHead->printObjectinfo(name);
+    else if (level == "WheelMachine")
+        MachineHead->printObjectinfo(name);
     else
         std::cout<<"Wrong level!"<<std::endl;
 }
@@ -138,6 +155,70 @@ void List::modObject(std::string name){
         ShipHead->modObject(name);
     else if(level == "Rocket")
         RocketHead->modObject(name);
+    else
+        std::cout<<"Wrong level!"<<std::endl;
+}
+
+void List::saveObjects() {
+    if(level == "Machine"){
+        MachineHead->saveObjects();
+        JetHead->saveObjects();
+        HeliHead->saveObjects();
+        SubHead->saveObjects();
+        ShipHead->saveObjects();
+        RocketHead->saveObjects();
+    }else if(level == "WheelMachine")
+        MachineHead->saveObjects();
+    else if(level =="FloatingMachine") {
+        ShipHead->saveObjects();
+        SubHead->saveObjects();
+    }else if(level == "FlyingMachine") {
+        JetHead->saveObjects();
+        HeliHead->saveObjects();
+    }else if(level == "SpaceMachine"){
+        RocketHead->saveObjects();
+    }else if(level == "Jet")
+        JetHead->saveObjects();
+    else if(level == "Helicopter")
+        HeliHead->saveObjects();
+    else if(level == "Submarine")
+        SubHead->saveObjects();
+    else if(level == "Ship")
+        ShipHead->saveObjects();
+    else if(level == "Rocket")
+        RocketHead->saveObjects();
+    else
+        std::cout<<"Wrong level!"<<std::endl;
+}
+
+void List::readObjects() {
+    if(level == "Machine"){
+        MachineHead->readObjects();
+        JetHead->readObjects();
+        HeliHead->readObjects();
+        SubHead->readObjects();
+        ShipHead->readObjects();
+        RocketHead->readObjects();
+    }else if(level == "WheelMachine")
+        MachineHead->readObjects();
+    else if(level =="FloatingMachine") {
+        ShipHead->readObjects();
+        SubHead->readObjects();
+    }else if(level == "FlyingMachine") {
+        JetHead->readObjects();
+        HeliHead->readObjects();
+    }else if(level == "SpaceMachine"){
+        RocketHead->readObjects();
+    }else if(level == "Jet")
+        JetHead->readObjects();
+    else if(level == "Helicopter")
+        HeliHead->readObjects();
+    else if(level == "Submarine")
+        SubHead->readObjects();
+    else if(level == "Ship")
+        ShipHead->readObjects();
+    else if(level == "Rocket")
+        RocketHead->readObjects();
     else
         std::cout<<"Wrong level!"<<std::endl;
 }

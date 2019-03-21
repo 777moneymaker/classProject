@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <fstream>
 #include <Headers/GlobalVariables.hpp>
 #include "Headers/Class.hpp"
 
@@ -347,9 +348,6 @@ void WheelMachine::printObjects() {
         while(temp){
             std::cout<<std::endl;
             std::cout <<"Name: "<< temp->name<<std::endl;
-            std::cout <<"Num of wheels: "<<temp->numOfWheels<<std::endl;
-            std::cout <<"Engine type: "<<temp->engineType<<std::endl;
-            std::cout <<"Power: "<<temp->power<<std::endl;
             std::cout<<std::endl;
             temp=temp->next;
         }
@@ -360,11 +358,6 @@ void Jet::printObjects() {
     while(temp){
         std::cout<<std::endl;
         std::cout <<"Name: "<<temp->name<<std::endl;
-        std::cout <<"Power: "<<temp->power<<std::endl;
-        std::cout <<"Landing gear: "<<temp->landingGear<<std::endl;
-        std::cout <<"Colour: "<<temp->colour<<std::endl;
-        std::cout <<"Weapon type: "<<temp->weaponType<<std::endl;
-        std::cout <<"Max speed: "<<temp->maxSpeed<<std::endl;
         std::cout<<std::endl;
         temp=temp->next;
     }
@@ -375,10 +368,6 @@ void Helicopter::printObjects() {
     while(temp){
         std::cout<<std::endl;
         std::cout <<"Name: "<<temp->name<<std::endl;
-        std::cout <<"Power: "<<temp->power<<std::endl;
-        std::cout <<"Landing gear: "<<temp->landingGear<<std::endl;
-        std::cout <<"Helicopter type: "<<temp->heliType<<std::endl;
-        std::cout <<"Max RPM: "<<temp->maxRPM<<std::endl;
         std::cout<<std::endl;
         temp=temp->next;
     }
@@ -389,10 +378,6 @@ void Submarine::printObjects() {
     while(temp){
         std::cout<<std::endl;
         std::cout <<"Name: "<<temp->name<<std::endl;
-        std::cout <<"Power: "<<temp->power<<std::endl;
-        std::cout <<"Power supply type: "<<temp->powerSupplyType<<std::endl;
-        std::cout <<"Type of propulsion: "<<temp->typeOfPropulsion<<std::endl;
-        std::cout<<"Max speed: "<<temp->maxSpeed<<std::endl;
         std::cout<<std::endl;
         temp=temp->next;
     }
@@ -403,10 +388,6 @@ void Ship::printObjects() {
     while(temp){
         std::cout<<std::endl;
         std::cout <<"Name: "<<temp->name<<std::endl;
-        std::cout <<"Power: "<<temp->power<<std::endl;
-        std::cout <<"Power supply type: "<<temp->powerSupplyType<<std::endl;
-        std::cout <<"Number of seats: "<<temp->numOfSeats<<std::endl;
-        std::cout <<"Ship type: "<<temp->shipType<<std::endl;
         std::cout<<std::endl;
         temp=temp->next;
     }
@@ -417,10 +398,6 @@ void Rocket::printObjects() {
     while(temp){
         std::cout<<std::endl;
         std::cout <<"Name: "<<temp->name<<std::endl;
-        std::cout <<"Power: "<<temp->power<<std::endl;
-        std::cout <<"Gas tank volume: "<<temp->gasTankVolume<<std::endl;
-        std::cout <<"Mission type "<<temp->missionType<<std::endl;
-        std::cout <<"Max range: "<<temp->maxRange<<std::endl;
         std::cout<<std::endl;
         temp=temp->next;
     }
@@ -619,6 +596,7 @@ void Helicopter::modObject(std::string name) {
     }
 }
 
+
 void Submarine::modObject(std::string name) {
     Submarine *temp = SubHead;
     while(temp){
@@ -715,3 +693,290 @@ void Rocket::modObject(std::string name) {
         temp=temp->next;
     }
 }
+
+void WheelMachine::saveObjects() {
+    WheelMachine *temp = MachineHead;
+    std::ofstream myfile;
+    myfile.open("WheelMachine.txt");
+    myfile.clear();
+    if(myfile.fail()){
+        std::cout<<"Fail opening a file!"<<std::endl;
+        return;
+    }
+    while(temp){
+        myfile<<temp->name<<std::endl;
+        myfile<<temp->numOfWheels<<std::endl;
+        myfile<<temp->engineType<<std::endl;
+        myfile<<temp->power<<std::endl;
+        temp=temp->next;
+    }
+    myfile.close();
+    return;
+}
+
+void Jet::saveObjects() {
+    Jet *temp = JetHead;
+    std::ofstream myfile;
+    myfile.open("Jet.txt");
+    myfile.clear();
+    if(myfile.fail()){
+        std::cout<<"Fail opening a file!"<<std::endl;
+        return;
+    }
+    while(temp){
+        myfile<<temp->name<<std::endl;
+        myfile<<temp->power<<std::endl;
+        myfile<<temp->landingGear<<std::endl;
+        myfile<<temp->colour<<std::endl;
+        myfile<<temp->weaponType<<std::endl;
+        myfile<<temp->maxSpeed<<std::endl;
+        temp=temp->next;
+    }
+    myfile.close();
+    return;
+}
+
+void Helicopter::saveObjects() {
+    Helicopter *temp = HeliHead;
+    std::ofstream myfile;
+    myfile.open("Helicopter.txt");
+    myfile.clear();
+    if(myfile.fail()){
+        std::cout<<"Fail opening a file!"<<std::endl;
+        return;
+    }
+    while(temp){
+        myfile<<temp->name<<std::endl;
+        myfile<<temp->power<<std::endl;
+        myfile<<temp->landingGear<<std::endl;
+        myfile<<temp->heliType<<std::endl;
+        myfile<<temp->maxRPM<<std::endl;
+        temp=temp->next;
+    }
+    myfile.close();
+    return;
+}
+
+void Ship::saveObjects() {
+    Ship *temp = ShipHead;
+    std::ofstream myfile;
+    myfile.open("Ship.txt");
+    myfile.clear();
+    if(myfile.fail()){
+        std::cout<<"Fail opening a file!"<<std::endl;
+        return;
+    }
+    while(temp){
+        myfile<<temp->name<<std::endl;
+        myfile<<temp->power<<std::endl;
+        myfile<<temp->powerSupplyType<<std::endl;
+        myfile<<temp->numOfSeats<<std::endl;
+        myfile<<temp->shipType<<std::endl;
+        temp=temp->next;
+    }
+    myfile.close();
+    return;
+}
+
+void Submarine::saveObjects() {
+    Submarine *temp = SubHead;
+    std::ofstream myfile;
+    myfile.open("Submarine.txt");
+    myfile.clear();
+    if(myfile.fail()){
+        std::cout<<"Fail opening a file!"<<std::endl;
+        return;
+    }
+    while(temp){
+        myfile<<temp->name<<std::endl;
+        myfile<<temp->power<<std::endl;
+        myfile<<temp->powerSupplyType<<std::endl;
+        myfile<<temp->typeOfPropulsion<<std::endl;
+        myfile<<temp->maxSpeed<<std::endl;
+        temp=temp->next;
+    }
+    myfile.close();
+    return;
+}
+
+void Rocket::saveObjects() {
+    Rocket *temp = RocketHead;
+    std::ofstream myfile;
+    myfile.open("Rocket.txt");
+    myfile.clear();
+    if(myfile.fail()){
+        std::cout<<"Fail opening a file!"<<std::endl;
+        return;
+    }
+    while(temp){
+        myfile<<temp->name<<std::endl;
+        myfile<<temp->power<<std::endl;
+        myfile<<temp->gasTankVolume<<std::endl;
+        myfile<<temp->missionType<<std::endl;
+        myfile<<temp->maxRange<<std::endl;
+        temp=temp->next;
+    }
+    myfile.close();
+    return;
+}
+
+void WheelMachine::readObjects() {
+    WheelMachine *temp = new WheelMachine;
+    std::ifstream myfile;
+    myfile.open("WheelMachine.txt");
+    if(myfile.fail()){
+        std::cout<<"Fail!"<<std::endl;
+        return;
+    }
+    while(myfile >> temp->name){
+        myfile>>temp->numOfWheels;
+        myfile>>temp->engineType;
+        myfile>>temp->power;
+
+        temp->next = NULL;
+
+        if(MachineHead == NULL) {
+            MachineHead = temp;
+            continue;
+        }
+        temp->next = MachineHead;
+        MachineHead=temp;
+    }
+    myfile.close();
+    return;
+}
+
+void Jet::readObjects() {
+    Jet *temp = new Jet;
+    std::ifstream myfile;
+    myfile.open("Jet.txt");
+    if(myfile.fail()){
+        std::cout<<"Fail!"<<std::endl;
+        return;
+    }
+    while(myfile >> temp->name){
+        myfile>>temp->power;
+        myfile>>temp->landingGear;
+        myfile>>temp->colour;
+        myfile>>temp->weaponType;
+        myfile>>temp->maxSpeed;
+
+        temp->next=NULL;
+
+        if(JetHead == NULL) {
+            JetHead = temp;
+            continue;
+        }
+        temp->next = JetHead;
+        JetHead = temp;
+    }
+    myfile.close();
+    return;
+}
+
+void Helicopter::readObjects() {
+    Helicopter *temp = new Helicopter;
+    std::ifstream myfile;
+    myfile.open("Helicopter.txt");
+    if(myfile.fail()){
+        std::cout<<"Fail!"<<std::endl;
+        return;
+    }
+    while(myfile >> temp->name){
+        myfile>>temp->power;
+        myfile>>temp->landingGear;
+        myfile>>temp->heliType;
+        myfile>>temp->maxRPM;
+
+        temp->next=NULL;
+
+        if(HeliHead == NULL) {
+            HeliHead = temp;
+            continue;
+        }
+        temp->next = HeliHead;
+        HeliHead = temp;
+    }
+    myfile.close();
+    return;
+}
+
+void Ship::readObjects() {
+    Ship *temp = new Ship;
+    std::ifstream myfile;
+    myfile.open("Ship.txt");
+    if(myfile.fail()){
+        std::cout<<"Fail!"<<std::endl;
+        return;
+    }
+    while(myfile >> temp->name){
+        myfile>>temp->power;
+        myfile>>temp->powerSupplyType;
+        myfile>>temp->numOfSeats;
+        myfile>>temp->shipType;
+
+        temp->next=NULL;
+
+        if(ShipHead == NULL) {
+            ShipHead = temp;
+            continue;
+        }
+        temp->next = ShipHead;
+        ShipHead = temp;
+    }
+    myfile.close();
+    return;
+}
+
+void Submarine::readObjects() {
+    Submarine *temp = new Submarine;
+    std::ifstream myfile;
+    myfile.open("Submarine.txt");
+    if(myfile.fail()){
+        std::cout<<"Fail!"<<std::endl;
+        return;
+    }
+    while(myfile >> temp->name){
+        myfile>>temp->power;
+        myfile>>temp->powerSupplyType;
+        myfile>>temp->typeOfPropulsion;
+        myfile>>temp->maxSpeed;
+
+        temp->next=NULL;
+
+        if(SubHead == NULL) {
+            SubHead = temp;
+            continue;
+        }
+        temp->next = SubHead;
+        SubHead = temp;
+    }
+}
+
+void Rocket::readObjects() {
+    Rocket *temp = new Rocket;
+    std::ifstream myfile;
+    myfile.open("Rocket.txt");
+    if(myfile.fail()){
+        std::cout<<"Fail!"<<std::endl;
+        return;
+    }
+    while(myfile >> temp->name){
+        myfile>>temp->power;
+        myfile>>temp->gasTankVolume;
+        myfile>>temp->missionType;
+        myfile>>temp->maxRange;
+
+        temp->next = NULL;
+
+        if(RocketHead == NULL) {
+            RocketHead = temp;
+            continue;
+        }
+        temp->next = temp;
+        RocketHead = temp;
+    }
+    myfile.close();
+    return;
+}
+
