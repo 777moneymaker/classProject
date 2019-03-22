@@ -22,18 +22,6 @@ Headers/Class.hpp
 
 .././Headers/MenuFunctions.hpp
 
-.././Headers/ObjectFunctions.hpp
-iostream
--
-fstream
--
-Headers/Class.hpp
-.././Headers/Headers/Class.hpp
-Headers/MenuFunctions.hpp
-.././Headers/Headers/MenuFunctions.hpp
-Headers/GlobalVariables.hpp
-.././Headers/Headers/GlobalVariables.hpp
-
 /Users/777moneymaker/Desktop/Projekt PPO/Headers/Class.hpp
 iostream
 -
@@ -62,43 +50,11 @@ Headers/MenuFunctions.hpp
 Headers/GlobalVariables.hpp
 /Users/777moneymaker/Desktop/Projekt PPO/Headers/Headers/GlobalVariables.hpp
 
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/ClassMethods.cpp
+/Users/777moneymaker/Desktop/Projekt PPO/Sources/GlobalVariables.cpp
 iostream
 -
-fstream
--
-Headers/GlobalVariables.hpp
--
-Headers/Class.hpp
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/Class.hpp
-
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/MenuFunctions.cpp
-iostream
--
-fstream
--
-Headers/Class.hpp
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/Class.hpp
-Headers/MenuFunctions.hpp
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/MenuFunctions.hpp
 Headers/GlobalVariables.hpp
 /Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/GlobalVariables.hpp
-
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/ObjectFunctions.cpp
-iostream
--
-string
--
-fstream
--
-Headers/Class.hpp
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/Class.hpp
-Headers/MenuFunctions.hpp
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/MenuFunctions.hpp
-Headers/GlobalVariables.hpp
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/GlobalVariables.hpp
-Headers/ObjectFunctions.hpp
-/Users/777moneymaker/Desktop/Projekt PPO/Sources/Headers/ObjectFunctions.hpp
 
 /Users/777moneymaker/Desktop/Projekt PPO/main.cpp
 iostream

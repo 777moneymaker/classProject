@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.o"
   "CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.o"
   "CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.o"
+  "CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.o"
   "Projekt_PPO.pdb"
   "Projekt_PPO"
 )

@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <Headers/GlobalVariables.hpp>
+#include <Headers/GVariables.hpp>
 #include "Headers/Class.hpp"
 
 void WheelMachine::insertNewVehicle(std::string name) {

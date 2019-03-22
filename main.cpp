@@ -6,17 +6,9 @@
 #include <string>
 #include <fstream>
 #include "Headers/Class.hpp"
-#include "Headers/MenuFunctions.hpp"
-#include "Headers/GlobalVariables.hpp"
-#include "Headers/ObjectFunctions.hpp"
-
-std::string level = "Machine";
-Jet *JetHead = NULL;
-Helicopter *HeliHead = NULL;      //
-Submarine *SubHead = NULL;        // every class head
-Ship *ShipHead = NULL;            //
-Rocket *RocketHead = NULL;
-WheelMachine *MachineHead = NULL;
+#include "Headers/Menu.hpp"
+#include "Headers/GVariables.hpp"
+#include "Headers/Objects.hpp"
 
 int main() {
     Utilities::HelloMsg();

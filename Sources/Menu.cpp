@@ -5,8 +5,8 @@
 #include <iostream>
 #include <fstream>
 #include "Headers/Class.hpp"
-#include "Headers/MenuFunctions.hpp"
-#include "Headers/GlobalVariables.hpp"
+#include "Headers/Menu.hpp"
+#include "Headers/GVariables.hpp"
 
 
 void Utilities::CommandList(){
@@ -17,8 +17,8 @@ void Utilities::CommandList(){
           "                * MDO - modificate object (MDO *name*)\n"
           "                * DIR - prints every object in given class\n"
           "                * SHOW - prints info about object (SHOW *name*)\n"
-          "                * SAVE - saves every object to txt file (SAVE *textfile.txt*)\n"
-          "                * READ - reads every object from txt file (READ *textfile.txt*)\n"
+          "                * SAVE - saves every object to txt file\n"
+          "                * READ - reads every object from txt file\n"
           "                * TREE - shows whole structure of classes\n"
           "                * EXIT - quit the program "<<std::endl;
 } // displays

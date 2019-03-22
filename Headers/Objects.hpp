@@ -8,8 +8,8 @@
 #include <iostream>
 #include <fstream>
 #include "Headers/Class.hpp"
-#include "Headers/MenuFunctions.hpp"
-#include "Headers/GlobalVariables.hpp"
+#include "Headers/Menu.hpp"
+#include "Headers/GVariables.hpp"
 
 namespace List{
     void insertNode(std::string name);  // insertion depends on actual level

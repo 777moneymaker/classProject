@@ -6,6 +6,11 @@ CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.o
  .././Headers/GlobalVariables.hpp
  .././Headers/MenuFunctions.hpp
  /Users/777moneymaker/Desktop/Projekt PPO/Sources/ClassMethods.cpp
+CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.o
+ .././Headers/Class.hpp
+ .././Headers/GlobalVariables.hpp
+ .././Headers/MenuFunctions.hpp
+ /Users/777moneymaker/Desktop/Projekt PPO/Sources/GlobalVariables.cpp
 CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.o
  .././Headers/Class.hpp
  .././Headers/GlobalVariables.hpp

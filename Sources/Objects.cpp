@@ -6,9 +6,9 @@
 #include <string>
 #include <fstream>
 #include "Headers/Class.hpp"
-#include "Headers/MenuFunctions.hpp"
-#include "Headers/GlobalVariables.hpp"
-#include "Headers/ObjectFunctions.hpp"
+#include "Headers/Menu.hpp"
+#include "Headers/GVariables.hpp"
+#include "Headers/Objects.hpp"
 
 void List::insertNode(std::string name) {
     if (level == "Jet")

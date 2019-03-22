@@ -3,5 +3,5 @@ project(Projekt_PPO)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Projekt_PPO main.cpp Headers/Class.hpp Headers/MenuFunctions.hpp Sources/MenuFunctions.cpp Sources/ClassMethods.cpp Headers/GlobalVariables.hpp Headers/ObjectFunctions.hpp Sources/ObjectFunctions.cpp)
+add_executable(Projekt_PPO main.cpp Headers/Class.hpp Headers/Menu.hpp Sources/Menu.cpp Sources/Class.cpp Headers/GVariables.hpp Headers/Objects.hpp Sources/Objects.cpp Sources/GVariables.cpp)
 include_directories(.)

@@ -150,6 +150,33 @@ Sources/ClassMethods.cpp.s:
 	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.s
 .PHONY : Sources/ClassMethods.cpp.s
 
+Sources/GlobalVariables.o: Sources/GlobalVariables.cpp.o
+
+.PHONY : Sources/GlobalVariables.o
+
+# target to build an object file
+Sources/GlobalVariables.cpp.o:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.o
+.PHONY : Sources/GlobalVariables.cpp.o
+
+Sources/GlobalVariables.i: Sources/GlobalVariables.cpp.i
+
+.PHONY : Sources/GlobalVariables.i
+
+# target to preprocess a source file
+Sources/GlobalVariables.cpp.i:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.i
+.PHONY : Sources/GlobalVariables.cpp.i
+
+Sources/GlobalVariables.s: Sources/GlobalVariables.cpp.s
+
+.PHONY : Sources/GlobalVariables.s
+
+# target to generate assembly for a file
+Sources/GlobalVariables.cpp.s:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.s
+.PHONY : Sources/GlobalVariables.cpp.s
+
 Sources/MenuFunctions.o: Sources/MenuFunctions.cpp.o
 
 .PHONY : Sources/MenuFunctions.o
@@ -243,6 +270,9 @@ help:
 	@echo "... Sources/ClassMethods.o"
 	@echo "... Sources/ClassMethods.i"
 	@echo "... Sources/ClassMethods.s"
+	@echo "... Sources/GlobalVariables.o"
+	@echo "... Sources/GlobalVariables.i"
+	@echo "... Sources/GlobalVariables.s"
 	@echo "... Sources/MenuFunctions.o"
 	@echo "... Sources/MenuFunctions.i"
 	@echo "... Sources/MenuFunctions.s"

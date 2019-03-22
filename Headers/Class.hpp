@@ -7,7 +7,7 @@
 
 #include<iostream>
 #include <fstream>
-#include "MenuFunctions.hpp"
+#include "Menu.hpp"
 
 class Machine {       // Base Class
 private:
