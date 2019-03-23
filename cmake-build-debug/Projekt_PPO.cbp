@@ -45,6 +45,9 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/777moneymaker/Desktop/Projekt PPO/."/>
+					<Add directory="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug"/>
+					<Add directory="/Users/777moneymaker/Desktop/Projekt PPO/Headers"/>
+					<Add directory="/Users/777moneymaker/Desktop/Projekt PPO/Sources"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
@@ -67,6 +70,9 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/777moneymaker/Desktop/Projekt PPO/."/>
+					<Add directory="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug"/>
+					<Add directory="/Users/777moneymaker/Desktop/Projekt PPO/Headers"/>
+					<Add directory="/Users/777moneymaker/Desktop/Projekt PPO/Sources"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
@@ -82,28 +88,61 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/Class.hpp">
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/CMakeLists.txt">
 			<Option target="Projekt_PPO"/>
 		</Unit>
-		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/GlobalVariables.hpp">
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/Class_Base.hpp">
 			<Option target="Projekt_PPO"/>
 		</Unit>
-		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/MenuFunctions.hpp">
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/Class_First_Level.hpp">
 			<Option target="Projekt_PPO"/>
 		</Unit>
-		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/ObjectFunctions.hpp">
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/Class_Second_Level.hpp">
 			<Option target="Projekt_PPO"/>
 		</Unit>
-		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/ClassMethods.cpp">
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/Global_Variables.hpp">
 			<Option target="Projekt_PPO"/>
 		</Unit>
-		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/GlobalVariables.cpp">
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/Menu_Methods.hpp">
 			<Option target="Projekt_PPO"/>
 		</Unit>
-		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/MenuFunctions.cpp">
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Headers/Object_Methods.hpp">
 			<Option target="Projekt_PPO"/>
 		</Unit>
-		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/ObjectFunctions.cpp">
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/README.md">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/Class_Base.cpp">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/Class_First_Level.cpp">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/Class_Second_Level.cpp">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/Global_Variables.cpp">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/Menu_Methods.cpp">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/Sources/Object_Methods.cpp">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeCache.txt">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/Makefile">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/Projekt_PPO.cbp">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/WheelMachine.txt">
+			<Option target="Projekt_PPO"/>
+		</Unit>
+		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/cmake_install.cmake">
 			<Option target="Projekt_PPO"/>
 		</Unit>
 		<Unit filename="/Users/777moneymaker/Desktop/Projekt PPO/main.cpp">

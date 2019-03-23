@@ -4,9 +4,11 @@
 
 #include <iostream>
 #include <fstream>
-#include "Headers/Class.hpp"
-#include "Headers/Menu.hpp"
-#include "Headers/GVariables.hpp"
+#include "Headers/Class_Base.hpp"
+#include "Headers/Class_First_Level.hpp"
+#include "Headers/Class_Second_Level.hpp"
+#include "Headers/Menu_Methods.hpp"
+#include "Headers/Global_Variables.hpp"
 
 
 void Utilities::CommandList(){

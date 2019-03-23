@@ -1,14 +1,16 @@
 //
-// Created by Miłosz Chodkowski on 2019-03-12.
+// Created by Miłosz Chodkowski on 2019-03-17.
 //
 
 #include <iostream>
 #include <string>
 #include <fstream>
-#include "Headers/Class.hpp"
-#include "Headers/Menu.hpp"
-#include "Headers/GVariables.hpp"
-#include "Headers/Objects.hpp"
+#include "Headers/Class_Base.hpp"
+#include "Headers/Class_First_Level.hpp"
+#include "Headers/Class_Second_Level.hpp"
+#include "Headers/Menu_Methods.hpp"
+#include "Headers/Global_Variables.hpp"
+#include "Headers/Object_Methods.hpp"
 
 int main() {
     Utilities::HelloMsg();

@@ -57,9 +57,61 @@ include CMakeFiles/Projekt_PPO.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Projekt_PPO.dir/flags.make
 
+CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.o: CMakeFiles/Projekt_PPO.dir/flags.make
+CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.o: ../Sources/Class_Base.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.o -c "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Class_Base.cpp"
+
+CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Class_Base.cpp" > CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.i
+
+CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Class_Base.cpp" -o CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.s
+
+CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.o: CMakeFiles/Projekt_PPO.dir/flags.make
+CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.o: ../Sources/Global_Variables.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.o -c "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Global_Variables.cpp"
+
+CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Global_Variables.cpp" > CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.i
+
+CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Global_Variables.cpp" -o CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.s
+
+CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.o: CMakeFiles/Projekt_PPO.dir/flags.make
+CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.o: ../Sources/Menu_Methods.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.o -c "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Menu_Methods.cpp"
+
+CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Menu_Methods.cpp" > CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.i
+
+CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Menu_Methods.cpp" -o CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.s
+
+CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.o: CMakeFiles/Projekt_PPO.dir/flags.make
+CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.o: ../Sources/Object_Methods.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.o -c "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Object_Methods.cpp"
+
+CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Object_Methods.cpp" > CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.i
+
+CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Object_Methods.cpp" -o CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.s
+
 CMakeFiles/Projekt_PPO.dir/main.cpp.o: CMakeFiles/Projekt_PPO.dir/flags.make
 CMakeFiles/Projekt_PPO.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Projekt_PPO.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Projekt_PPO.dir/main.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projekt_PPO.dir/main.cpp.o -c "/Users/777moneymaker/Desktop/Projekt PPO/main.cpp"
 
 CMakeFiles/Projekt_PPO.dir/main.cpp.i: cmake_force
@@ -70,77 +122,55 @@ CMakeFiles/Projekt_PPO.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projekt_PPO.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/777moneymaker/Desktop/Projekt PPO/main.cpp" -o CMakeFiles/Projekt_PPO.dir/main.cpp.s
 
-CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.o: CMakeFiles/Projekt_PPO.dir/flags.make
-CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.o: ../Sources/MenuFunctions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.o -c "/Users/777moneymaker/Desktop/Projekt PPO/Sources/MenuFunctions.cpp"
+CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.o: CMakeFiles/Projekt_PPO.dir/flags.make
+CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.o: ../Sources/Class_First_Level.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.o -c "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Class_First_Level.cpp"
 
-CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/777moneymaker/Desktop/Projekt PPO/Sources/MenuFunctions.cpp" > CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.i
+CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Class_First_Level.cpp" > CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.i
 
-CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/777moneymaker/Desktop/Projekt PPO/Sources/MenuFunctions.cpp" -o CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.s
+CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Class_First_Level.cpp" -o CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.s
 
-CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.o: CMakeFiles/Projekt_PPO.dir/flags.make
-CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.o: ../Sources/ClassMethods.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.o -c "/Users/777moneymaker/Desktop/Projekt PPO/Sources/ClassMethods.cpp"
+CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.o: CMakeFiles/Projekt_PPO.dir/flags.make
+CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.o: ../Sources/Class_Second_Level.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.o -c "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Class_Second_Level.cpp"
 
-CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/777moneymaker/Desktop/Projekt PPO/Sources/ClassMethods.cpp" > CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.i
+CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Class_Second_Level.cpp" > CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.i
 
-CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/777moneymaker/Desktop/Projekt PPO/Sources/ClassMethods.cpp" -o CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.s
-
-CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.o: CMakeFiles/Projekt_PPO.dir/flags.make
-CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.o: ../Sources/ObjectFunctions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.o -c "/Users/777moneymaker/Desktop/Projekt PPO/Sources/ObjectFunctions.cpp"
-
-CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/777moneymaker/Desktop/Projekt PPO/Sources/ObjectFunctions.cpp" > CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.i
-
-CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/777moneymaker/Desktop/Projekt PPO/Sources/ObjectFunctions.cpp" -o CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.s
-
-CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.o: CMakeFiles/Projekt_PPO.dir/flags.make
-CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.o: ../Sources/GlobalVariables.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.o -c "/Users/777moneymaker/Desktop/Projekt PPO/Sources/GlobalVariables.cpp"
-
-CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/777moneymaker/Desktop/Projekt PPO/Sources/GlobalVariables.cpp" > CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.i
-
-CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/777moneymaker/Desktop/Projekt PPO/Sources/GlobalVariables.cpp" -o CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.s
+CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/777moneymaker/Desktop/Projekt PPO/Sources/Class_Second_Level.cpp" -o CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.s
 
 # Object files for target Projekt_PPO
 Projekt_PPO_OBJECTS = \
+"CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.o" \
+"CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.o" \
+"CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.o" \
+"CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.o" \
 "CMakeFiles/Projekt_PPO.dir/main.cpp.o" \
-"CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.o" \
-"CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.o" \
-"CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.o" \
-"CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.o"
+"CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.o" \
+"CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.o"
 
 # External object files for target Projekt_PPO
 Projekt_PPO_EXTERNAL_OBJECTS =
 
+Projekt_PPO: CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.o
+Projekt_PPO: CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.o
+Projekt_PPO: CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.o
+Projekt_PPO: CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.o
 Projekt_PPO: CMakeFiles/Projekt_PPO.dir/main.cpp.o
-Projekt_PPO: CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.o
-Projekt_PPO: CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.o
-Projekt_PPO: CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.o
-Projekt_PPO: CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.o
+Projekt_PPO: CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.o
+Projekt_PPO: CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.o
 Projekt_PPO: CMakeFiles/Projekt_PPO.dir/build.make
 Projekt_PPO: CMakeFiles/Projekt_PPO.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Projekt_PPO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Projekt_PPO"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Projekt_PPO.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -123,113 +123,167 @@ Projekt_PPO/fast:
 	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/build
 .PHONY : Projekt_PPO/fast
 
-Sources/ClassMethods.o: Sources/ClassMethods.cpp.o
+Sources/Class_Base.o: Sources/Class_Base.cpp.o
 
-.PHONY : Sources/ClassMethods.o
-
-# target to build an object file
-Sources/ClassMethods.cpp.o:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.o
-.PHONY : Sources/ClassMethods.cpp.o
-
-Sources/ClassMethods.i: Sources/ClassMethods.cpp.i
-
-.PHONY : Sources/ClassMethods.i
-
-# target to preprocess a source file
-Sources/ClassMethods.cpp.i:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.i
-.PHONY : Sources/ClassMethods.cpp.i
-
-Sources/ClassMethods.s: Sources/ClassMethods.cpp.s
-
-.PHONY : Sources/ClassMethods.s
-
-# target to generate assembly for a file
-Sources/ClassMethods.cpp.s:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.s
-.PHONY : Sources/ClassMethods.cpp.s
-
-Sources/GlobalVariables.o: Sources/GlobalVariables.cpp.o
-
-.PHONY : Sources/GlobalVariables.o
+.PHONY : Sources/Class_Base.o
 
 # target to build an object file
-Sources/GlobalVariables.cpp.o:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.o
-.PHONY : Sources/GlobalVariables.cpp.o
+Sources/Class_Base.cpp.o:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.o
+.PHONY : Sources/Class_Base.cpp.o
 
-Sources/GlobalVariables.i: Sources/GlobalVariables.cpp.i
+Sources/Class_Base.i: Sources/Class_Base.cpp.i
 
-.PHONY : Sources/GlobalVariables.i
+.PHONY : Sources/Class_Base.i
 
 # target to preprocess a source file
-Sources/GlobalVariables.cpp.i:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.i
-.PHONY : Sources/GlobalVariables.cpp.i
+Sources/Class_Base.cpp.i:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.i
+.PHONY : Sources/Class_Base.cpp.i
 
-Sources/GlobalVariables.s: Sources/GlobalVariables.cpp.s
+Sources/Class_Base.s: Sources/Class_Base.cpp.s
 
-.PHONY : Sources/GlobalVariables.s
+.PHONY : Sources/Class_Base.s
 
 # target to generate assembly for a file
-Sources/GlobalVariables.cpp.s:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.s
-.PHONY : Sources/GlobalVariables.cpp.s
+Sources/Class_Base.cpp.s:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.s
+.PHONY : Sources/Class_Base.cpp.s
 
-Sources/MenuFunctions.o: Sources/MenuFunctions.cpp.o
+Sources/Class_First_Level.o: Sources/Class_First_Level.cpp.o
 
-.PHONY : Sources/MenuFunctions.o
+.PHONY : Sources/Class_First_Level.o
 
 # target to build an object file
-Sources/MenuFunctions.cpp.o:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.o
-.PHONY : Sources/MenuFunctions.cpp.o
+Sources/Class_First_Level.cpp.o:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.o
+.PHONY : Sources/Class_First_Level.cpp.o
 
-Sources/MenuFunctions.i: Sources/MenuFunctions.cpp.i
+Sources/Class_First_Level.i: Sources/Class_First_Level.cpp.i
 
-.PHONY : Sources/MenuFunctions.i
+.PHONY : Sources/Class_First_Level.i
 
 # target to preprocess a source file
-Sources/MenuFunctions.cpp.i:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.i
-.PHONY : Sources/MenuFunctions.cpp.i
+Sources/Class_First_Level.cpp.i:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.i
+.PHONY : Sources/Class_First_Level.cpp.i
 
-Sources/MenuFunctions.s: Sources/MenuFunctions.cpp.s
+Sources/Class_First_Level.s: Sources/Class_First_Level.cpp.s
 
-.PHONY : Sources/MenuFunctions.s
+.PHONY : Sources/Class_First_Level.s
 
 # target to generate assembly for a file
-Sources/MenuFunctions.cpp.s:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.s
-.PHONY : Sources/MenuFunctions.cpp.s
+Sources/Class_First_Level.cpp.s:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.s
+.PHONY : Sources/Class_First_Level.cpp.s
 
-Sources/ObjectFunctions.o: Sources/ObjectFunctions.cpp.o
+Sources/Class_Second_Level.o: Sources/Class_Second_Level.cpp.o
 
-.PHONY : Sources/ObjectFunctions.o
+.PHONY : Sources/Class_Second_Level.o
 
 # target to build an object file
-Sources/ObjectFunctions.cpp.o:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.o
-.PHONY : Sources/ObjectFunctions.cpp.o
+Sources/Class_Second_Level.cpp.o:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.o
+.PHONY : Sources/Class_Second_Level.cpp.o
 
-Sources/ObjectFunctions.i: Sources/ObjectFunctions.cpp.i
+Sources/Class_Second_Level.i: Sources/Class_Second_Level.cpp.i
 
-.PHONY : Sources/ObjectFunctions.i
+.PHONY : Sources/Class_Second_Level.i
 
 # target to preprocess a source file
-Sources/ObjectFunctions.cpp.i:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.i
-.PHONY : Sources/ObjectFunctions.cpp.i
+Sources/Class_Second_Level.cpp.i:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.i
+.PHONY : Sources/Class_Second_Level.cpp.i
 
-Sources/ObjectFunctions.s: Sources/ObjectFunctions.cpp.s
+Sources/Class_Second_Level.s: Sources/Class_Second_Level.cpp.s
 
-.PHONY : Sources/ObjectFunctions.s
+.PHONY : Sources/Class_Second_Level.s
 
 # target to generate assembly for a file
-Sources/ObjectFunctions.cpp.s:
-	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.s
-.PHONY : Sources/ObjectFunctions.cpp.s
+Sources/Class_Second_Level.cpp.s:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.s
+.PHONY : Sources/Class_Second_Level.cpp.s
+
+Sources/Global_Variables.o: Sources/Global_Variables.cpp.o
+
+.PHONY : Sources/Global_Variables.o
+
+# target to build an object file
+Sources/Global_Variables.cpp.o:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.o
+.PHONY : Sources/Global_Variables.cpp.o
+
+Sources/Global_Variables.i: Sources/Global_Variables.cpp.i
+
+.PHONY : Sources/Global_Variables.i
+
+# target to preprocess a source file
+Sources/Global_Variables.cpp.i:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.i
+.PHONY : Sources/Global_Variables.cpp.i
+
+Sources/Global_Variables.s: Sources/Global_Variables.cpp.s
+
+.PHONY : Sources/Global_Variables.s
+
+# target to generate assembly for a file
+Sources/Global_Variables.cpp.s:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.s
+.PHONY : Sources/Global_Variables.cpp.s
+
+Sources/Menu_Methods.o: Sources/Menu_Methods.cpp.o
+
+.PHONY : Sources/Menu_Methods.o
+
+# target to build an object file
+Sources/Menu_Methods.cpp.o:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.o
+.PHONY : Sources/Menu_Methods.cpp.o
+
+Sources/Menu_Methods.i: Sources/Menu_Methods.cpp.i
+
+.PHONY : Sources/Menu_Methods.i
+
+# target to preprocess a source file
+Sources/Menu_Methods.cpp.i:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.i
+.PHONY : Sources/Menu_Methods.cpp.i
+
+Sources/Menu_Methods.s: Sources/Menu_Methods.cpp.s
+
+.PHONY : Sources/Menu_Methods.s
+
+# target to generate assembly for a file
+Sources/Menu_Methods.cpp.s:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.s
+.PHONY : Sources/Menu_Methods.cpp.s
+
+Sources/Object_Methods.o: Sources/Object_Methods.cpp.o
+
+.PHONY : Sources/Object_Methods.o
+
+# target to build an object file
+Sources/Object_Methods.cpp.o:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.o
+.PHONY : Sources/Object_Methods.cpp.o
+
+Sources/Object_Methods.i: Sources/Object_Methods.cpp.i
+
+.PHONY : Sources/Object_Methods.i
+
+# target to preprocess a source file
+Sources/Object_Methods.cpp.i:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.i
+.PHONY : Sources/Object_Methods.cpp.i
+
+Sources/Object_Methods.s: Sources/Object_Methods.cpp.s
+
+.PHONY : Sources/Object_Methods.s
+
+# target to generate assembly for a file
+Sources/Object_Methods.cpp.s:
+	$(MAKE) -f CMakeFiles/Projekt_PPO.dir/build.make CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.s
+.PHONY : Sources/Object_Methods.cpp.s
 
 main.o: main.cpp.o
 
@@ -267,18 +321,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Projekt_PPO"
-	@echo "... Sources/ClassMethods.o"
-	@echo "... Sources/ClassMethods.i"
-	@echo "... Sources/ClassMethods.s"
-	@echo "... Sources/GlobalVariables.o"
-	@echo "... Sources/GlobalVariables.i"
-	@echo "... Sources/GlobalVariables.s"
-	@echo "... Sources/MenuFunctions.o"
-	@echo "... Sources/MenuFunctions.i"
-	@echo "... Sources/MenuFunctions.s"
-	@echo "... Sources/ObjectFunctions.o"
-	@echo "... Sources/ObjectFunctions.i"
-	@echo "... Sources/ObjectFunctions.s"
+	@echo "... Sources/Class_Base.o"
+	@echo "... Sources/Class_Base.i"
+	@echo "... Sources/Class_Base.s"
+	@echo "... Sources/Class_First_Level.o"
+	@echo "... Sources/Class_First_Level.i"
+	@echo "... Sources/Class_First_Level.s"
+	@echo "... Sources/Class_Second_Level.o"
+	@echo "... Sources/Class_Second_Level.i"
+	@echo "... Sources/Class_Second_Level.s"
+	@echo "... Sources/Global_Variables.o"
+	@echo "... Sources/Global_Variables.i"
+	@echo "... Sources/Global_Variables.s"
+	@echo "... Sources/Menu_Methods.o"
+	@echo "... Sources/Menu_Methods.i"
+	@echo "... Sources/Menu_Methods.s"
+	@echo "... Sources/Object_Methods.o"
+	@echo "... Sources/Object_Methods.i"
+	@echo "... Sources/Object_Methods.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

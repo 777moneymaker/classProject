@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Projekt_PPO.dir/Sources/Class_Base.cpp.o"
+  "CMakeFiles/Projekt_PPO.dir/Sources/Global_Variables.cpp.o"
+  "CMakeFiles/Projekt_PPO.dir/Sources/Menu_Methods.cpp.o"
+  "CMakeFiles/Projekt_PPO.dir/Sources/Object_Methods.cpp.o"
   "CMakeFiles/Projekt_PPO.dir/main.cpp.o"
-  "CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.o"
-  "CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.o"
-  "CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.o"
-  "CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.o"
+  "CMakeFiles/Projekt_PPO.dir/Sources/Class_First_Level.cpp.o"
+  "CMakeFiles/Projekt_PPO.dir/Sources/Class_Second_Level.cpp.o"
   "Projekt_PPO.pdb"
   "Projekt_PPO"
 )
