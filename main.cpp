@@ -49,8 +49,18 @@ int main() {
                     case 0:
                         if (atribute == ".")   // we do not want level == "."
                             level = "Machine";
+                        else if (atribute == "FlyingMachine/Jet")
+                            level = "Jet";
+                        else if (atribute == "FlyingMachine/Helicopter")
+                            level = "Helicopter";
+                        else if (atribute == "FloatingMachine/Ship")
+                            level = "Ship";
+                        else if (atribute == "FloatingMachine/Submarine")
+                            level = "Submarine";
+                        else if (atribute == "SpaceMachine/Rocket")
+                            level = "Rocket";
                         else
-                            level = atribute;
+                            std::cout<<"Wrong path!"<<std::endl;
                         break;
                     case 1:
                         Utilities::CommandList();
@@ -132,12 +142,21 @@ int main() {
                 level == "Rocket") {    // ***************** 2nd level
                 switch( SecondLevel::commandToInt(command, atribute) ){
                     case 0:
-                        if(atribute == "." ){
+                        if(atribute == ".." ){
                             level = "Machine";
                             break;
-                        }
-                        level = atribute;
-                        break;
+                        }else if (atribute ==".") {
+                            if (level == "Jet" || level == "Helicopter")
+                                level = "FlyingMachine";
+                            else if (level == "Submarine" || level == "Ship")
+                                level = "FloatingMachine";
+                            else if (level == "Rocket")
+                                level = "SpaceMachine";
+                            else
+                                std::cout << "Wrong Level!" << std::endl;
+                        }else
+                            level = atribute;
+                            break;
                     case 1 :
                         List::insertNode(atribute);
                         break;

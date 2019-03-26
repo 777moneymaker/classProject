@@ -86,7 +86,12 @@ bool Base::isCommandGood(std::string command, std::string atribute) {
                                     atribute == "SpaceMachine" ||
                                     atribute == "WheelMachine" ||
                                     atribute =="Machine" ||
-                                    atribute == "."))
+                                    atribute == "." ||
+                                    atribute == "FlyingMachine/Jet" ||
+                                    atribute == "FlyingMachine/Helicopter"||
+                                    atribute == "FloatingMachine/Ship" ||
+                                    atribute == "FloatingMachine/Submarine" ||
+                                    atribute == "SpaceMachine/Rocket"))
                                         return true;
     else if (command == "SAVE")
         return true;
@@ -110,7 +115,12 @@ int Base::commandToInt(std::string command, std::string atribute) {
                         atribute =="FlyingMachine" ||
                         atribute =="FloatingMachine" ||
                         atribute =="SpaceMachine" ||
-                        atribute =="WheelMachine"))
+                        atribute =="WheelMachine" ||
+                        atribute == "FlyingMachine/Jet" ||
+                        atribute == "FlyingMachine/Helicopter"||
+                        atribute == "FloatingMachine/Ship" ||
+                        atribute == "FloatingMachine/Submarine" ||
+                        atribute == "SpaceMachine/Rocket"))
                             return 0;
     else if(command == "HELP")
         return 1;
@@ -220,7 +230,8 @@ bool SecondLevel::isCommandGood(std::string command, std::string atribute) {
                                 atribute == "SpaceMachine" ||
                                 atribute == "FloatingMachine" ||
                                 atribute == "WheelMachine" ||
-                                atribute == "."))
+                                atribute == "." ||
+                                atribute == ".."))
                                     return true;
     else if (command == "DO")
         return true;
@@ -251,6 +262,7 @@ bool SecondLevel::isCommandGood(std::string command, std::string atribute) {
 int SecondLevel::commandToInt(std::string command, std::string atribute) {
     if (command == "CD" && (atribute == "Machine" ||
                             atribute == "." ||
+                            atribute == ".." ||
                             atribute == "FlyingMachine" ||
                             atribute == "Floating Machine" ||
                             atribute == "WheelMachine" ||
