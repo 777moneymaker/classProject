@@ -11,46 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5f86aca-4741-41ae-ad63-485326177063" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Headers/Class_Base.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Headers/Class_First_Level.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Headers/Class_Second_Level.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Headers/Global_Variables.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Headers/Object_Methods.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/Class_First_Level.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/Class_Second_Level.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/Global_Variables.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Headers/Class.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Headers/GVariables.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Headers/Menu.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Headers/Menu_Methods.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Headers/Objects.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/Class.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Class_Base.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/GVariables.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Menu_Methods.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/Objects.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/Object_Methods.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/Sources/ClassMethods.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/Sources/GlobalVariables.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/Sources/MenuFunctions.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/Sources/ObjectFunctions.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projekt_PPO.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Projekt_PPO" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Projekt_PPO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Projekt_PPO.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Projekt_PPO.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="e5f86aca-4741-41ae-ad63-485326177063" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1026">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="239">
+              <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
               <folding>
                 <element signature="e#54#73#0" expanded="true" />
               </folding>
@@ -241,18 +202,17 @@
       <workItem from="1553340006734" duration="16000" />
       <workItem from="1553340030447" duration="49000" />
       <workItem from="1553351557797" duration="24000" />
-      <workItem from="1553372033623" duration="3655000" />
+      <workItem from="1553372033623" duration="3716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70749000" />
+    <option name="totallyTimeSpent" value="70810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2653791" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2653791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -467,8 +427,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1026">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="239">
+          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
           <folding>
             <element signature="e#54#73#0" expanded="true" />
           </folding>
