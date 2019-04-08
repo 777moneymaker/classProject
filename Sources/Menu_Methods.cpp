@@ -33,8 +33,8 @@ void Utilities::Tree(){
                "                 |               |--> Jet / Helicopter\n"
                "                 |\n"
                "                 |--> WheelMachine \n"
-               "                 |               |\n"
-               "                 |               |--> Empty\n"
+               "                 |               \n"
+               "                 |               \n"
                "                 |\n"
                "                 |--> FloatingMachine \n"
                "                 |               |\n"
@@ -81,7 +81,7 @@ bool Base::isCommandGood(std::string command, std::string atribute) {
         return false;
     else if (command == "CD" && atribute == "CD")   // single *CD* makes atribute == CD
         return false;
-    else if (command == "CD"   &&  (atribute == "FlyingMachine"||
+    else if (command == "CD"   &&  (atribute == "FlyingMachine" ||
                                     atribute == "FloatingMachine" ||
                                     atribute == "SpaceMachine" ||
                                     atribute == "WheelMachine" ||
@@ -110,17 +110,17 @@ bool Base::isCommandGood(std::string command, std::string atribute) {
 }
 
 int Base::commandToInt(std::string command, std::string atribute) {
-    if(command=="CD" && (atribute == "Machine" ||
-                        atribute == "." ||
-                        atribute =="FlyingMachine" ||
-                        atribute =="FloatingMachine" ||
-                        atribute =="SpaceMachine" ||
-                        atribute =="WheelMachine" ||
-                        atribute == "FlyingMachine/Jet" ||
-                        atribute == "FlyingMachine/Helicopter"||
-                        atribute == "FloatingMachine/Ship" ||
-                        atribute == "FloatingMachine/Submarine" ||
-                        atribute == "SpaceMachine/Rocket"))
+    if(command=="CD" && (  atribute == "Machine"
+                        || atribute == "."
+                        || atribute =="FlyingMachine"
+                        || atribute =="FloatingMachine"
+                        || atribute =="SpaceMachine"
+                        || atribute =="WheelMachine"
+                        || atribute == "FlyingMachine/Jet"
+                        || atribute == "FlyingMachine/Helicopter"
+                        || atribute == "FloatingMachine/Ship"
+                        || atribute == "FloatingMachine/Submarine"
+                        || atribute == "SpaceMachine/Rocket"))
                             return 0;
     else if(command == "HELP")
         return 1;
@@ -150,7 +150,8 @@ bool FirstLevel::isCommandGood(std::string command, std::string atribute) {
                                 atribute == "Ship" ||
                                 atribute == "Rocket" ||
                                 atribute =="Machine" ||
-                                atribute == "."))
+                                atribute == "." ||
+                                atribute == ".."))
                                     return true;
     else if (command == "DO")
         return true;
@@ -182,21 +183,28 @@ bool FirstLevel::isCommandGood(std::string command, std::string atribute) {
 int FirstLevel::commandToInt(std::string command, std::string atribute){
     if(level == "FlyingMachine" && command=="CD" && (atribute == "Machine" ||
                                                     atribute == "." ||
+                                                    atribute == ".." ||
                                                     atribute =="Jet" ||
                                                     atribute =="Helicopter"))
                                                         return 0;
+
     else if(level == "FloatingMachine" && command=="CD" && (atribute == "Machine" ||
                                                             atribute == "." ||
+                                                            atribute == ".." ||
                                                             atribute =="Submarine" ||
                                                             atribute =="Ship"))
                                                                 return 0;
+
     else if(level == "WheelMachine" && command=="CD" && (atribute == "." ||
+                                                        atribute ==".." ||
                                                         atribute == "Machine"))
                                                                  return 0;
     else if(level == "SpaceMachine" && command=="CD" && (atribute == "Machine" ||
                                                           atribute == "." ||
+                                                          atribute == ".." ||
                                                           atribute =="Rocket" ))
                                                             return 0;
+
     else if(command == "MO" )
         return 1;
     else if(command == "DO" )

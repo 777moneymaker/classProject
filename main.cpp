@@ -59,6 +59,14 @@ int main() {
                             level = "Submarine";
                         else if (atribute == "SpaceMachine/Rocket")
                             level = "Rocket";
+                        else if (atribute == "FlyingMachine")
+                            level = "FlyingMachine";
+                        else if (atribute == "FloatingMachine")
+                            level = "FloatingMachine";
+                        else if(atribute == "WheelMachine")
+                            level = "WheelMachine";
+                        else if(atribute == "SpaceMachine")
+                            level = "SpaceMachine";
                         else
                             std::cout<<"Wrong path!"<<std::endl;
                         break;
@@ -93,7 +101,7 @@ int main() {
                 level == "SpaceMachine"){
                 switch (FirstLevel::commandToInt(command, atribute)) {
                     case 0:
-                        if(atribute==".")
+                        if(atribute=="." || atribute == "..")
                             level = "Machine";
                         else
                             level = atribute;
