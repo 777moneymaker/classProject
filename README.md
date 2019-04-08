@@ -8,7 +8,7 @@ Structure
 Info
 -----
 ```
-CD [class] - change class/change level
+CD [class] || CD ./.. - change class/change level
 MO [object] - creates object for given class/level
 DO [object] - deletes object for given class/level
 MDO [object] – modyficates given object / sets new params 
