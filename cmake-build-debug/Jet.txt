@@ -1,6 +1,0 @@
-F18
-1200
-Wheels
-RED
-guns
-300

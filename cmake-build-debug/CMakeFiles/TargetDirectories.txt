@@ -1,3 +1,0 @@
-/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/777moneymaker/Desktop/Projekt PPO/cmake-build-debug/CMakeFiles/Projekt_PPO.dir
